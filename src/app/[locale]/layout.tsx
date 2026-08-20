@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import { Plus_Jakarta_Sans, Inter, IBM_Plex_Mono } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -8,6 +8,7 @@ import { siteConfig } from "@/lib/site-config";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { BackToTop } from "@/components/BackToTop";
 import "../globals.css";
 
 const display = Plus_Jakarta_Sans({
@@ -20,6 +21,12 @@ const body = Inter({
   variable: "--font-body",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
+});
+
+const technical = IBM_Plex_Mono({
+  variable: "--font-technical",
+  subsets: ["latin"],
+  weight: ["500", "600"],
 });
 
 export function generateStaticParams() {
@@ -92,7 +99,11 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
   };
 
   return (
-    <html lang={locale} dir={dir} className={`${display.variable} ${body.variable}`}>
+    <html
+      lang={locale}
+      dir={dir}
+      className={`${display.variable} ${body.variable} ${technical.variable}`}
+    >
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <script
           type="application/ld+json"
@@ -103,6 +114,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
           <main className="flex-1">{props.children}</main>
           <Footer />
           <WhatsAppButton message="Hello, I'm interested in your coconut export products." />
+          <BackToTop />
         </NextIntlClientProvider>
       </body>
     </html>

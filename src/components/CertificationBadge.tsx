@@ -18,8 +18,8 @@ export function CertificationBadge({
   const Icon = iconMap[cert.icon] ?? BadgeCheck;
 
   return (
-    <div className="flex items-start gap-4 rounded-2xl border border-line bg-cream p-6">
-      <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-gold/15 text-gold">
+    <div className="group flex items-start gap-4 rounded-2xl border border-line bg-cream p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-ink/5">
+      <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-gold/15 text-gold transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
         <Icon className="size-6" strokeWidth={1.5} aria-hidden />
       </span>
       <div className="flex flex-col gap-1">

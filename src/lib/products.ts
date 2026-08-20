@@ -33,6 +33,7 @@ export interface ProductSpec {
 export interface ProductDefinition {
   slug: ProductSlug;
   icon: LucideIcon;
+  image: string;
   specs: ProductSpec[];
 }
 
@@ -45,6 +46,7 @@ export const products: ProductDefinition[] = [
   {
     slug: "charcoal-briquette",
     icon: Flame,
+    image: "/images/charcoal-briquette.jpeg",
     specs: [
       { key: "shape", value: "Cube, Hexagonal, Pillow, Finger, Flat" },
       { key: "fixedCarbon", value: "≥ 75%" },
@@ -60,6 +62,7 @@ export const products: ProductDefinition[] = [
   {
     slug: "coconut-shell-charcoal",
     icon: Package,
+    image: "/images/coconut-shell-charcoal.jpg",
     specs: [
       { key: "grade", value: "Grade A / Grade B" },
       { key: "size", value: "2 – 5 cm (customizable)" },
@@ -74,6 +77,7 @@ export const products: ProductDefinition[] = [
   {
     slug: "semi-husked-coconut",
     icon: Nut,
+    image: "/images/semi-husked-coconut.jpeg",
     specs: [
       { key: "netWeight", value: "300 – 500 g / piece" },
       { key: "huskRemaining", value: "approx. 30% husk retained at the base" },

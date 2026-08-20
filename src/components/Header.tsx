@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -12,7 +13,15 @@ import clsx from "clsx";
 export function Header() {
   const t = useTranslations("nav");
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const links = [
     { href: "/", label: t("home") },
@@ -22,12 +31,22 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-cream/90 backdrop-blur">
+    <header
+      className={clsx(
+        "sticky top-0 z-50 border-b bg-cream/90 backdrop-blur transition-shadow duration-300",
+        scrolled ? "border-line shadow-sm shadow-ink/5" : "border-transparent",
+      )}
+    >
       <Container className="flex h-18 items-center justify-between py-3">
         <Link href="/" className="flex items-center gap-2.5">
-          <span className="flex size-10 items-center justify-center rounded-full bg-forest font-display text-lg font-bold text-cream">
-            IB
-          </span>
+          <Image
+            src="/images/logo-inbus.png"
+            alt={siteConfig.brandName}
+            width={114}
+            height={100}
+            priority
+            className="h-10 w-auto"
+          />
           <span className="font-display text-lg leading-tight font-semibold text-ink">
             {siteConfig.brandName}
           </span>

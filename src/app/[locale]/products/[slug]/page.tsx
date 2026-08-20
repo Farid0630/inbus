@@ -5,6 +5,9 @@ import { ArrowRight, ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/Container";
 import { ProductCard } from "@/components/ProductCard";
+import { Reveal } from "@/components/Reveal";
+import { TiltCard } from "@/components/TiltCard";
+import { EmberParticles } from "@/components/EmberParticles";
 import { products, getProduct } from "@/lib/products";
 import { whatsappLink } from "@/lib/site-config";
 
@@ -43,6 +46,7 @@ export default async function ProductDetailPage(props: PageProps<"/[locale]/prod
     <>
       <section className="bg-grain relative overflow-hidden bg-ink py-16 sm:py-20">
         <div className="absolute inset-0 bg-linear-to-br from-forest-dark via-ink to-ink" />
+        <EmberParticles className="pointer-events-none absolute inset-0" density={30} />
         <Container className="relative flex flex-col gap-3">
           <Link
             href="/products"
@@ -51,7 +55,7 @@ export default async function ProductDetailPage(props: PageProps<"/[locale]/prod
             <ArrowRight className="size-3.5 rotate-180 rtl:rotate-0" aria-hidden />
             {t("backToProducts")}
           </Link>
-          <div className="flex items-center gap-4 pt-2">
+          <Reveal className="flex items-center gap-4 pt-2">
             <span className="flex size-14 items-center justify-center rounded-2xl bg-gold/15 text-gold-light">
               <Icon className="size-7" strokeWidth={1.5} aria-hidden />
             </span>
@@ -61,13 +65,13 @@ export default async function ProductDetailPage(props: PageProps<"/[locale]/prod
               </h1>
               <p className="font-medium text-gold-light">{t(`items.${product.slug}.tagline`)}</p>
             </div>
-          </div>
+          </Reveal>
         </Container>
       </section>
 
       <section className="py-16 sm:py-20">
         <Container className="grid gap-12 lg:grid-cols-3 lg:gap-10">
-          <div className="flex flex-col gap-6 lg:col-span-2">
+          <Reveal className="flex flex-col gap-6 lg:col-span-2">
             {description.map((paragraph) => (
               <p key={paragraph} className="leading-relaxed text-muted">
                 {paragraph}
@@ -93,9 +97,9 @@ export default async function ProductDetailPage(props: PageProps<"/[locale]/prod
                 ))}
               </ul>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="flex flex-col gap-6">
+          <Reveal delay={150} className="flex flex-col gap-6">
             <div className="rounded-2xl border border-line bg-cream p-6">
               <h2 className="mb-4 font-display text-lg font-semibold text-ink">
                 {t("specsTitle")}
@@ -106,10 +110,10 @@ export default async function ProductDetailPage(props: PageProps<"/[locale]/prod
                     key={spec.key}
                     className="flex flex-col gap-0.5 border-b border-line pb-3 last:border-0 last:pb-0"
                   >
-                    <dt className="text-xs font-medium tracking-wide text-muted uppercase">
+                    <dt className="text-xs font-medium tracking-wide text-graphite-light uppercase">
                       {t(`specLabels.${spec.key}`)}
                     </dt>
-                    <dd className="text-sm font-medium text-ink">{spec.value}</dd>
+                    <dd className="font-mono text-sm font-medium text-ink">{spec.value}</dd>
                   </div>
                 ))}
               </dl>
@@ -137,19 +141,25 @@ export default async function ProductDetailPage(props: PageProps<"/[locale]/prod
                 <ArrowUpRight className="size-4" aria-hidden />
               </a>
             </div>
-          </div>
+          </Reveal>
         </Container>
       </section>
 
       {otherProducts.length > 0 ? (
-        <section className="bg-sand py-16 sm:py-20">
+        <section className="bg-sand bg-blueprint py-16 sm:py-20">
           <Container className="flex flex-col gap-8">
-            <h2 className="font-display text-2xl font-semibold text-ink">
-              {t("otherProducts")}
-            </h2>
+            <Reveal>
+              <h2 className="font-display text-2xl font-semibold text-ink">
+                {t("otherProducts")}
+              </h2>
+            </Reveal>
             <div className="grid gap-6 sm:grid-cols-2">
-              {otherProducts.map((p) => (
-                <ProductCard key={p.slug} product={p} />
+              {otherProducts.map((p, i) => (
+                <Reveal key={p.slug} delay={(i % 2) * 100} className="flex h-full">
+                  <TiltCard className="flex h-full">
+                    <ProductCard product={p} />
+                  </TiltCard>
+                </Reveal>
               ))}
             </div>
           </Container>

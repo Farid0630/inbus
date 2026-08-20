@@ -3,6 +3,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { MapPin, Phone, Mail, Clock, Anchor, ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/Container";
 import { ContactForm } from "@/components/ContactForm";
+import { Reveal } from "@/components/Reveal";
+import { EmberParticles } from "@/components/EmberParticles";
 import { siteConfig, whatsappLink } from "@/lib/site-config";
 
 export async function generateMetadata(props: {
@@ -63,27 +65,30 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
     <>
       <section className="bg-grain relative overflow-hidden bg-ink py-20 sm:py-24">
         <div className="absolute inset-0 bg-linear-to-br from-forest-dark via-ink to-ink" />
+        <EmberParticles className="pointer-events-none absolute inset-0" density={35} />
         <Container className="relative flex flex-col items-center gap-5 text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-gold-light uppercase">
-            {t("eyebrow")}
-          </span>
-          <h1 className="font-display max-w-2xl text-4xl font-bold text-balance text-cream sm:text-5xl">
-            {t("title")}
-          </h1>
-          <p className="max-w-2xl text-lg leading-relaxed text-cream/70">{t("subtitle")}</p>
+          <Reveal className="flex flex-col items-center gap-5">
+            <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-gold-light uppercase">
+              {t("eyebrow")}
+            </span>
+            <h1 className="font-display max-w-2xl text-4xl font-bold text-balance text-cream sm:text-5xl">
+              {t("title")}
+            </h1>
+            <p className="max-w-2xl text-lg leading-relaxed text-cream/70">{t("subtitle")}</p>
+          </Reveal>
         </Container>
       </section>
 
       <section className="py-20 sm:py-24">
         <Container className="grid gap-10 lg:grid-cols-5 lg:gap-12">
-          <div className="rounded-3xl border border-line bg-cream p-6 sm:p-8 lg:col-span-3">
+          <Reveal className="rounded-3xl border border-line bg-cream p-6 sm:p-8 lg:col-span-3">
             <h2 className="mb-6 font-display text-xl font-semibold text-ink">
               {t("formTitle")}
             </h2>
             <ContactForm />
-          </div>
+          </Reveal>
 
-          <div className="flex flex-col gap-6 lg:col-span-2">
+          <Reveal delay={150} className="flex flex-col gap-6 lg:col-span-2">
             <div className="rounded-3xl border border-line bg-sand p-6 sm:p-8">
               <h2 className="mb-5 font-display text-xl font-semibold text-ink">
                 {t("infoTitle")}
@@ -144,7 +149,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
                 </a>
               </div>
             </div>
-          </div>
+          </Reveal>
         </Container>
       </section>
     </>

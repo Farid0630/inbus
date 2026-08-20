@@ -1,16 +1,16 @@
 <svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="ember1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#e0b672" stop-opacity="0.55" />
+    <radialGradient id="rust1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#cb6a44" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#cb6a44" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="rust2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b5502f" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#b5502f" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="gold1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e0b672" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#e0b672" stop-opacity="0" />
-    </radialGradient>
-    <radialGradient id="ember2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#c9974a" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#c9974a" stop-opacity="0" />
-    </radialGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#2f7a57" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#2f7a57" stop-opacity="0" />
     </radialGradient>
     <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="30" />
@@ -18,21 +18,47 @@
     <filter id="soft-lg" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="60" />
     </filter>
+    <filter id="soft-frond" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" />
+    </filter>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#f8f3e9" stroke-opacity="0.05" stroke-width="1" />
+    </pattern>
   </defs>
 
   <rect width="1600" height="900" fill="#163f2e" />
+  <rect width="1600" height="900" fill="url(#grid)" />
 
-  <circle cx="220" cy="680" r="260" fill="url(#glow)" filter="url(#soft-lg)" />
-  <circle cx="1380" cy="180" r="320" fill="url(#glow)" filter="url(#soft-lg)" />
-  <circle cx="1180" cy="720" r="180" fill="url(#ember2)" filter="url(#soft)" />
-  <circle cx="260" cy="160" r="150" fill="url(#ember1)" filter="url(#soft)" />
-  <circle cx="820" cy="450" r="220" fill="url(#ember1)" filter="url(#soft-lg)" opacity="0.5" />
-  <circle cx="1480" cy="620" r="140" fill="url(#ember2)" filter="url(#soft)" />
-  <circle cx="70" cy="380" r="110" fill="url(#ember1)" filter="url(#soft)" />
+  <!-- warm glow accents -->
+  <circle cx="1380" cy="180" r="300" fill="url(#gold1)" filter="url(#soft-lg)" />
+  <circle cx="220" cy="700" r="240" fill="url(#rust1)" filter="url(#soft-lg)" />
+  <circle cx="1180" cy="720" r="170" fill="url(#rust2)" filter="url(#soft)" />
+  <circle cx="70" cy="380" r="120" fill="url(#gold1)" filter="url(#soft)" opacity="0.6" />
 
-  <g stroke="#fffcf7" stroke-width="2" fill="none" opacity="0.12" filter="url(#soft)">
-    <path d="M300,900 C280,760 380,700 350,560 C320,420 420,380 400,260" />
-    <path d="M1300,900 C1320,780 1220,720 1250,580 C1280,440 1180,400 1210,280" />
+  <!-- tropical frond silhouette, bottom-left -->
+  <g transform="translate(60 900)" filter="url(#soft-frond)" opacity="0.14">
+    <g fill="#f8f3e9">
+      <ellipse cx="0" cy="-260" rx="22" ry="260" transform="rotate(-58)" />
+      <ellipse cx="0" cy="-300" rx="24" ry="300" transform="rotate(-34)" />
+      <ellipse cx="0" cy="-330" rx="26" ry="330" transform="rotate(-12)" />
+      <ellipse cx="0" cy="-310" rx="24" ry="310" transform="rotate(10)" />
+      <ellipse cx="0" cy="-270" rx="22" ry="270" transform="rotate(30)" />
+    </g>
+  </g>
+
+  <!-- tropical frond silhouette, top-right -->
+  <g transform="translate(1600 20)" filter="url(#soft-frond)" opacity="0.12">
+    <g fill="#e0b672">
+      <ellipse cx="0" cy="240" rx="18" ry="240" transform="rotate(150)" />
+      <ellipse cx="0" cy="270" rx="20" ry="270" transform="rotate(168)" />
+      <ellipse cx="0" cy="290" rx="20" ry="290" transform="rotate(-170)" />
+      <ellipse cx="0" cy="260" rx="18" ry="260" transform="rotate(-150)" />
+    </g>
+  </g>
+
+  <!-- fine rising threads -->
+  <g stroke="#fffcf7" stroke-width="1.5" fill="none" opacity="0.1">
     <path d="M900,900 C920,800 850,740 880,620 C910,500 830,460 860,340" />
+    <path d="M1300,900 C1320,780 1220,720 1250,580 C1280,440 1180,400 1210,280" />
   </g>
 </svg>

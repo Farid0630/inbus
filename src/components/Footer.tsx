@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { MapPin, Phone, Mail, BadgeCheck } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -18,9 +19,13 @@ export function Footer() {
       <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-4 sm:col-span-2 lg:col-span-1">
           <div className="flex items-center gap-2.5">
-            <span className="flex size-10 items-center justify-center rounded-full bg-forest-light font-display text-lg font-bold text-cream">
-              IB
-            </span>
+            <Image
+              src="/images/logo-inbus.png"
+              alt={siteConfig.brandName}
+              width={114}
+              height={100}
+              className="h-10 w-auto"
+            />
             <span className="font-display text-lg font-semibold text-cream">
               {siteConfig.brandName}
             </span>

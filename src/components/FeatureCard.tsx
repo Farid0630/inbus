@@ -15,13 +15,13 @@ export function FeatureCard({
   return (
     <div
       className={clsx(
-        "flex flex-col gap-4 rounded-2xl border p-6",
+        "group flex flex-col gap-4 rounded-2xl border p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-ink/5",
         tone === "light" ? "border-line bg-cream" : "border-white/10 bg-white/5",
       )}
     >
       <span
         className={clsx(
-          "flex size-11 items-center justify-center rounded-xl",
+          "flex size-11 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110",
           tone === "light" ? "bg-forest/10 text-forest" : "bg-gold/15 text-gold-light",
         )}
       >

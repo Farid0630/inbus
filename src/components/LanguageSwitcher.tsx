@@ -48,7 +48,7 @@ export function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
       {open ? (
         <div
           role="listbox"
-          className="absolute end-0 z-50 mt-2 w-48 overflow-hidden rounded-xl border border-line bg-cream py-1 shadow-xl"
+          className="absolute start-0 z-50 mt-2 w-48 overflow-hidden rounded-xl border border-line bg-cream py-1 shadow-xl lg:start-auto lg:end-0"
         >
           {locales.map((loc) => (
             <Link
