@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "siteName": "Inbus Solusi Bisnis",
+    "titleTemplate": "%s | Inbus Solusi Bisnis",
+    "defaultTitle": "Charcoal Briquette, Coconut Shell Charcoal & Semi Husked Coconut Exporter from Makassar",
+    "defaultDescription": "Manufacturer and exporter of coconut derivative products from Makassar, Indonesia — Charcoal Briquette, Coconut Shell Charcoal, and Semi Husked Coconut of export-grade quality for global markets.",
+    "keywords": "coconut charcoal briquette Indonesia, coconut shell charcoal supplier, semi husked coconut exporter, coconut briquette Makassar, coconut exporter South Sulawesi"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "hero": {
+    "eyebrow": "Coconut Product Exporter from Makassar, Indonesia",
+    "title": "Sulawesi's Finest Coconut Quality,",
+    "highlight": "Ready for Export Worldwide",
+    "subtitle": "We manufacture and export Charcoal Briquette, Coconut Shell Charcoal, and Semi Husked Coconut to international quality standards, straight from South Sulawesi's coconut heartland.",
+    "ctaPrimary": "View Our Products",
+    "ctaSecondary": "Contact via WhatsApp",
+    "statCapacityLabel": "Tons production capacity/month",
+    "statCountriesLabel": "Export destination countries",
+    "statExperienceLabel": "Years of export experience"
+  },
+  "home": {
+    "aboutEyebrow": "About Us",
+    "aboutTitle": "Your Trusted Partner for Coconut Product Imports",
+    "aboutBody1": "Based in Makassar, the heart of South Sulawesi's coconut region, we process selected coconut raw material into export-grade derivative products. Every step of our production is closely monitored, from raw material selection to shipment-ready packaging.",
+    "aboutBody2": "We work directly with local farmers and collectors to maintain a sustainable supply chain while supporting the coconut farming communities of South Sulawesi.",
+    "aboutCta": "More About Us",
+    "productsEyebrow": "Featured Products",
+    "productsTitle": "Our Three Flagship Export Products",
+    "productsSubtitle": "Manufactured to international standard specifications and adaptable to buyer requirements.",
+    "whyEyebrow": "Why Choose Us",
+    "whyTitle": "Why Buyers Choose Us",
+    "whySubtitle": "We understand what international buyers need — consistency, transparency, and on-time delivery.",
+    "whyItems": [
+      {
+        "title": "Standardized Quality",
+        "desc": "Every batch undergoes strict quality control against agreed specifications before shipment."
+      },
+      {
+        "title": "Stable Production Capacity",
+        "desc": "A wide raw material supplier network keeps production running consistently year-round."
+      },
+      {
+        "title": "Export Experience",
+        "desc": "Experienced in handling export documentation, customs clearance, and shipping to multiple countries."
+      },
+      {
+        "title": "Competitive Pricing",
+        "desc": "Supply chain efficiency directly from farmers enables competitive FOB pricing."
+      },
+      {
+        "title": "Responsive Communication",
+        "desc": "Our export team is ready to respond quickly to inquiries, samples, and negotiations."
+      }
+    ],
+    "processEyebrow": "Our Process",
+    "processTitle": "Export Order Workflow",
+    "processSubtitle": "A simple, transparent process from quotation to arrival at the destination port.",
+    "processSteps": [
+      {
+        "title": "Consultation & Quotation",
+        "desc": "Share your product needs, specifications, and volume — we'll respond with a price quotation."
+      },
+      {
+        "title": "Sample & Agreement",
+        "desc": "We send product samples for quality inspection before the contract and payment are finalized."
+      },
+      {
+        "title": "Production & Quality Control",
+        "desc": "Production proceeds according to specification, with quality checks at every stage."
+      },
+      {
+        "title": "Shipment",
+        "desc": "Goods are packed, documented, and shipped from Makassar Port according to the agreed terms."
+      }
+    ],
+    "certEyebrow": "Legality & Certification",
+    "certTitle": "Manufactured to Export Standards",
+    "certSubtitle": "Complete documentation and certification to ensure a smooth import process in the destination country.",
+    "ctaTitle": "Ready to Start an Export Partnership?",
+    "ctaSubtitle": "Send us your product needs and volume, and our team will respond with a quotation within 24 hours.",
+    "ctaButtonPrimary": "Request a Quote Now",
+    "ctaButtonSecondary": "Chat via WhatsApp"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "Connecting Sulawesi Coconuts with the World",
+    "intro": "Inbus Solusi Bisnis is a manufacturer and exporter of coconut derivative products based in Makassar, South Sulawesi — one of Indonesia's finest coconut-producing regions.",
+    "storyTitle": "Our Story",
+    "storyBody1": "Rooted in close relationships with local coconut farming communities, we built a production facility focused on three core products: Charcoal Briquette, Coconut Shell Charcoal, and Semi Husked Coconut.",
+    "storyBody2": "Over time, our distribution network has grown across several countries, driven by a commitment to consistent quality and on-time delivery.",
+    "missionTitle": "Our Mission",
+    "missionBody": "To consistently supply export-grade coconut derivative products, while supporting the welfare of farmers and coconut communities in South Sulawesi.",
+    "visionTitle": "Our Vision",
+    "visionBody": "To become Eastern Indonesia's most trusted coconut product exporter, known for quality, sustainability, and responsive service.",
+    "valuesTitle": "Our Core Values",
+    "valuesSubtitle": "The principles that guide every partnership we build.",
+    "values": [
+      {
+        "title": "Consistent Quality",
+        "desc": "Every shipment goes through the same quality control standard, without compromise."
+      },
+      {
+        "title": "Sustainability",
+        "desc": "We support environmentally friendly, sustainable coconut processing practices."
+      },
+      {
+        "title": "Transparency",
+        "desc": "Open communication regarding pricing, specifications, and delivery schedules."
+      },
+      {
+        "title": "Long-Term Partnership",
+        "desc": "We build lasting business relationships, not one-off transactions."
+      }
+    ],
+    "statsTitle": "Us in Numbers"
+  },
+  "products": {
+    "eyebrow": "Our Products",
+    "title": "Coconut Derivative Export Products",
+    "subtitle": "Three flagship products manufactured to export-grade standards, adaptable to buyer specifications.",
+    "viewDetails": "View Product Details",
+    "specsTitle": "Technical Specifications",
+    "applicationsTitle": "Applications & Uses",
+    "packagingMoqTitle": "Packaging & Minimum Order",
+    "ctaTitle": "Interested in This Product?",
+    "ctaSubtitle": "Contact us to get a price quotation and product samples.",
+    "requestQuote": "Request a Quote",
+    "backToProducts": "Back to All Products",
+    "otherProducts": "Other Products",
+    "specLabels": {
+      "shape": "Shape",
+      "fixedCarbon": "Fixed Carbon",
+      "ashContent": "Ash Content",
+      "moisture": "Moisture",
+      "volatileMatter": "Volatile Matter",
+      "calorificValue": "Calorific Value",
+      "burningTime": "Burning Time",
+      "sulfurContent": "Sulfur Content",
+      "grade": "Grade",
+      "size": "Size",
+      "netWeight": "Net Weight",
+      "huskRemaining": "Husk Remaining",
+      "shelfLife": "Shelf Life",
+      "harvestAge": "Harvest Age",
+      "packaging": "Packaging",
+      "moq": "Minimum Order (MOQ)",
+      "loadability": "Loadability"
+    },
+    "items": {
+      "charcoal-briquette": {
+        "name": "Charcoal Briquette",
+        "tagline": "Premium Coconut Charcoal Briquette",
+        "shortDesc": "Dense coconut charcoal briquette with high calorific value and low ash, ideal for shisha, BBQ, and industrial fuel needs.",
+        "description": [
+          "Our Charcoal Briquette is made from selected coconut shell charcoal powder compressed without harmful chemicals, producing fuel with a stable flame, high heat, and minimal smoke.",
+          "Available in a variety of shapes (cube, hexagonal, pillow, finger, flat) to suit market needs, from household use and BBQ restaurants to shisha lounges across the globe."
+        ],
+        "applications": [
+          "Shisha/hookah fuel",
+          "Restaurant BBQ & grilling",
+          "Household use",
+          "Eco-friendly heating industry",
+          "Retail & HoReCa export"
+        ]
+      },
+      "coconut-shell-charcoal": {
+        "name": "Coconut Shell Charcoal",
+        "tagline": "Raw Coconut Shell Charcoal",
+        "shortDesc": "Raw coconut shell charcoal carbonized from selected shells — the primary raw material for briquettes and activated carbon.",
+        "description": [
+          "Coconut Shell Charcoal is produced by carbonizing selected coconut shells through a controlled burning process, resulting in charcoal with high fixed carbon and low ash content.",
+          "This product is widely used as raw material for briquette manufacturing, activated carbon production, and as a direct industrial fuel source."
+        ],
+        "applications": [
+          "Raw material for briquette manufacturing",
+          "Raw material for activated carbon",
+          "Industrial fuel",
+          "Metallurgical raw material",
+          "Bulk export to processing plants"
+        ]
+      },
+      "semi-husked-coconut": {
+        "name": "Semi Husked Coconut",
+        "tagline": "Export-Grade Semi Husked Coconut",
+        "shortDesc": "Fresh mature coconuts partially husked for easier handling and opening at the destination, while keeping the water and flesh fresh.",
+        "description": [
+          "Semi Husked Coconut is a selected mature coconut with the husk partially removed, leaving a section at the base as a handle and protection during long-distance shipping.",
+          "Our harvesting and post-harvest handling process is designed to preserve the freshness of the coconut water and flesh until it reaches the buyer or end consumer."
+        ],
+        "applications": [
+          "Fresh coconut water consumption",
+          "Supermarket & fresh produce retail",
+          "Raw material for coconut milk/VCO processing",
+          "Fresh young and mature coconut export",
+          "HoReCa needs (hotels, restaurants, catering)"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact Us",
+    "title": "Let's Discuss Your Export Needs",
+    "subtitle": "Fill out the form below or reach us directly via WhatsApp/email — our team is ready to help.",
+    "formTitle": "Send an Inquiry / Quote Request",
+    "formName": "Full Name",
+    "formEmail": "Email Address",
+    "formPhone": "WhatsApp/Phone Number",
+    "formCountry": "Country",
+    "formProduct": "Product of Interest",
+    "formProductPlaceholder": "Select a product",
+    "formMessage": "Message / Requirement Details",
+    "formMessagePlaceholder": "Describe your volume, specifications, and shipping destination...",
+    "formSubmit": "Send via Email",
+    "formNote": "The button above will open your email app with the message pre-filled.",
+    "infoTitle": "Contact Information",
+    "addressLabel": "Factory/Office Address",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "hoursLabel": "Working Hours",
+    "portLabel": "Port of Loading",
+    "whatsappCtaTitle": "Need a Faster Response?",
+    "whatsappCtaSubtitle": "Chat directly with our export team via WhatsApp for a quick quotation.",
+    "whatsappCtaButton": "Chat via WhatsApp"
+  },
+  "footer": {
+    "tagline": "Exporter of Charcoal Briquette, Coconut Shell Charcoal, and Semi Husked Coconut from Makassar, Indonesia.",
+    "navTitle": "Navigation",
+    "productsTitle": "Products",
+    "contactTitle": "Contact",
+    "legalTitle": "Certifications",
+    "rights": "All rights reserved.",
+    "certifiedTitle": "Certified"
+  },
+  "certifications": {
+    "phytosanitary": {
+      "title": "Phytosanitary Certificate",
+      "desc": "Plant quarantine certificate for smooth export of agricultural products."
+    },
+    "sucofindo": {
+      "title": "SUCOFINDO Inspection",
+      "desc": "Independent inspection to verify quality and quantity prior to shipment."
+    },
+    "iso": {
+      "title": "ISO 9001:2015",
+      "desc": "International quality management standard applied throughout our production."
+    },
+    "halal": {
+      "title": "Halal Certificate",
+      "desc": "Ensures the production process meets halal standards for specific markets."
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "desc": "Sorry, the page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
+  }
+}

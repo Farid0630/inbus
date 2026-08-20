@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "siteName": "Inbus Solusi Bisnis",
+    "titleTemplate": "%s | Inbus Solusi Bisnis",
+    "defaultTitle": "来自望加锡的椰壳炭砖、椰壳炭、半去壳椰子出口商",
+    "defaultDescription": "总部位于印度尼西亚望加锡的椰子衍生产品制造商和出口商——提供出口品质的椰壳炭砖(Charcoal Briquette)、椰壳炭(Coconut Shell Charcoal)和半去壳椰子(Semi Husked Coconut),面向全球市场。",
+    "keywords": "印尼椰壳炭砖, 椰壳炭供应商, 半去壳椰子出口商, 望加锡椰炭, 南苏拉威西椰子出口商"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "products": "产品",
+    "contact": "联系我们",
+    "getQuote": "获取报价"
+  },
+  "hero": {
+    "eyebrow": "来自印度尼西亚望加锡的椰子产品出口商",
+    "title": "苏拉威西优质椰子，",
+    "highlight": "准备出口全球",
+    "subtitle": "我们按照国际质量标准生产并出口椰壳炭砖、椰壳炭和半去壳椰子，直接来自南苏拉威西椰子核心产区。",
+    "ctaPrimary": "查看我们的产品",
+    "ctaSecondary": "通过WhatsApp联系",
+    "statCapacityLabel": "吨/月生产能力",
+    "statCountriesLabel": "出口目的地国家",
+    "statExperienceLabel": "年出口经验"
+  },
+  "home": {
+    "aboutEyebrow": "关于我们",
+    "aboutTitle": "您值得信赖的椰子产品进口合作伙伴",
+    "aboutBody1": "我们总部位于望加锡——南苏拉威西椰子产区的核心地带，将精选椰子原料加工成出口品质的衍生产品。从原料筛选到成品包装，我们对每一个生产环节都严格把关。",
+    "aboutBody2": "我们与当地农户和收购商直接合作，以维持供应链的可持续性，同时支持南苏拉威西椰农社区的发展。",
+    "aboutCta": "了解更多关于我们",
+    "productsEyebrow": "主打产品",
+    "productsTitle": "我们的三大出口拳头产品",
+    "productsSubtitle": "按照国际标准规格生产，可根据买家需求进行调整。",
+    "whyEyebrow": "我们的优势",
+    "whyTitle": "买家选择我们的理由",
+    "whySubtitle": "我们深知国际买家的需求——一致性、透明度和准时交货。",
+    "whyItems": [
+      {
+        "title": "标准化品质",
+        "desc": "每批产品在发货前均经过严格的质量控制，符合约定规格。"
+      },
+      {
+        "title": "稳定的生产能力",
+        "desc": "广泛的原料供应网络确保全年生产持续稳定。"
+      },
+      {
+        "title": "丰富的出口经验",
+        "desc": "在处理出口单证、清关及多国运输方面经验丰富。"
+      },
+      {
+        "title": "价格具有竞争力",
+        "desc": "直接从农户采购的高效供应链使FOB价格更具竞争力。"
+      },
+      {
+        "title": "反馈迅速",
+        "desc": "我们的出口团队随时快速响应询盘、样品申请与商务洽谈。"
+      }
+    ],
+    "processEyebrow": "合作流程",
+    "processTitle": "出口订单流程",
+    "processSubtitle": "从报价到货物抵达目的港，流程简单透明。",
+    "processSteps": [
+      {
+        "title": "咨询与报价",
+        "desc": "告诉我们您的产品需求、规格与数量——我们将回复报价单。"
+      },
+      {
+        "title": "样品与确认",
+        "desc": "在签订合同和确定付款方式前，我们会寄送样品供质量检验。"
+      },
+      {
+        "title": "生产与质量控制",
+        "desc": "生产按规格进行，并在每个阶段进行质量检测。"
+      },
+      {
+        "title": "发货",
+        "desc": "货物按约定条款完成包装、单证制作，并从望加锡港发运。"
+      }
+    ],
+    "certEyebrow": "资质与认证",
+    "certTitle": "按出口标准生产",
+    "certSubtitle": "完善的文件与认证，确保货物在目的国顺利完成进口流程。",
+    "ctaTitle": "准备好开始出口合作了吗？",
+    "ctaSubtitle": "请告诉我们您的产品需求与数量，我们的团队将在24小时内回复报价。",
+    "ctaButtonPrimary": "立即索取报价",
+    "ctaButtonSecondary": "通过WhatsApp聊天"
+  },
+  "about": {
+    "eyebrow": "关于我们",
+    "title": "连接苏拉威西椰子与世界",
+    "intro": "Inbus Solusi Bisnis 是一家总部位于印度尼西亚南苏拉威西望加锡的椰子衍生产品制造商与出口商——该地区是印尼最优质的椰子产地之一。",
+    "storyTitle": "我们的故事",
+    "storyBody1": "我们与当地椰农社区建立了密切联系，并建立了专注于三大核心产品的生产设施：椰壳炭砖、椰壳炭和半去壳椰子。",
+    "storyBody2": "随着时间推移，我们的分销网络已扩展至多个国家，这得益于我们对稳定品质与准时交货的坚持。",
+    "missionTitle": "我们的使命",
+    "missionBody": "持续提供出口品质的椰子衍生产品，同时支持南苏拉威西农户与椰子社区的福祉。",
+    "visionTitle": "我们的愿景",
+    "visionBody": "成为印尼东部最值得信赖的椰子产品出口商，以品质、可持续发展和快速响应的服务而闻名。",
+    "valuesTitle": "我们的核心价值观",
+    "valuesSubtitle": "指导我们建立每一段合作关系的原则。",
+    "values": [
+      {
+        "title": "品质如一",
+        "desc": "每一批货物都经过相同标准的质量控制，绝不妥协。"
+      },
+      {
+        "title": "可持续发展",
+        "desc": "我们支持环保、可持续的椰子加工方式。"
+      },
+      {
+        "title": "透明公开",
+        "desc": "在价格、规格和交货时间上保持开放沟通。"
+      },
+      {
+        "title": "长期合作",
+        "desc": "我们致力于建立长久的业务关系，而非一次性交易。"
+      }
+    ],
+    "statsTitle": "数据说话"
+  },
+  "products": {
+    "eyebrow": "我们的产品",
+    "title": "椰子衍生出口产品",
+    "subtitle": "三大主打产品均按出口品质标准生产，可根据买家规格进行调整。",
+    "viewDetails": "查看产品详情",
+    "specsTitle": "技术规格",
+    "applicationsTitle": "用途与应用",
+    "packagingMoqTitle": "包装与最小起订量",
+    "ctaTitle": "对该产品感兴趣？",
+    "ctaSubtitle": "联系我们获取报价和产品样品。",
+    "requestQuote": "索取报价",
+    "backToProducts": "返回所有产品",
+    "otherProducts": "其他产品",
+    "specLabels": {
+      "shape": "形状",
+      "fixedCarbon": "固定碳含量 (Fixed Carbon)",
+      "ashContent": "灰分 (Ash Content)",
+      "moisture": "水分 (Moisture)",
+      "volatileMatter": "挥发分 (Volatile Matter)",
+      "calorificValue": "热值 (Calorific Value)",
+      "burningTime": "燃烧时长",
+      "sulfurContent": "硫含量",
+      "grade": "等级",
+      "size": "尺寸",
+      "netWeight": "净重",
+      "huskRemaining": "保留椰壳比例",
+      "shelfLife": "保质期",
+      "harvestAge": "采收树龄/月龄",
+      "packaging": "包装方式",
+      "moq": "最小起订量 (MOQ)",
+      "loadability": "装载量"
+    },
+    "items": {
+      "charcoal-briquette": {
+        "name": "Charcoal Briquette",
+        "tagline": "优质椰壳炭砖",
+        "shortDesc": "高密度椰壳炭砖，热值高、灰分低，适用于水烟、烧烤及工业燃料需求。",
+        "description": [
+          "我们的椰壳炭砖选用优质椰壳炭粉压制而成，不添加任何有害化学物质，燃烧时火焰稳定、热量高、烟雾少。",
+          "提供多种形状（方块形、六角形、枕形、指形、扁平形）以满足不同市场需求，广泛应用于家庭用户、烧烤餐厅及全球各地的水烟馆。"
+        ],
+        "applications": [
+          "水烟/阿拉伯水烟燃料",
+          "餐厅烧烤",
+          "家庭使用",
+          "环保取暖行业",
+          "零售及餐饮酒店业出口"
+        ]
+      },
+      "coconut-shell-charcoal": {
+        "name": "Coconut Shell Charcoal",
+        "tagline": "椰壳原炭",
+        "shortDesc": "由精选椰壳碳化制成的原炭，是生产炭砖和活性炭的主要原料。",
+        "description": [
+          "椰壳炭由精选椰壳经过可控燃烧碳化工艺制成，具有固定碳含量高、灰分低的特点。",
+          "该产品被广泛用作炭砖生产、活性炭（Activated Carbon）制造的原料，也可直接作为工业燃料使用。"
+        ],
+        "applications": [
+          "炭砖生产原料",
+          "活性炭生产原料",
+          "工业燃料",
+          "冶金原料",
+          "面向加工厂的散装出口"
+        ]
+      },
+      "semi-husked-coconut": {
+        "name": "Semi Husked Coconut",
+        "tagline": "出口品质半去壳椰子",
+        "shortDesc": "新鲜成熟椰子经部分去壳处理，便于在目的地搬运和开壳，同时保持椰汁和椰肉的新鲜度。",
+        "description": [
+          "半去壳椰子选用优质成熟椰子，外壳部分去除，底部保留一部分椰壳作为把手，并在长途运输中起到保护作用。",
+          "我们的采收与采后处理工艺经过精心设计，确保椰汁和椰肉的新鲜度，直至送达买家或终端消费者手中。"
+        ],
+        "applications": [
+          "新鲜椰汁饮用",
+          "超市及生鲜市场零售",
+          "椰浆/初榨椰子油（VCO）加工原料",
+          "新鲜嫩椰及老椰出口",
+          "餐饮酒店业需求（酒店、餐厅、餐饮服务）"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "联系我们",
+    "title": "让我们探讨您的出口需求",
+    "subtitle": "请填写下方表单，或直接通过WhatsApp/电子邮件联系我们——我们的团队随时为您提供帮助。",
+    "formTitle": "发送询盘 / 报价请求",
+    "formName": "姓名",
+    "formEmail": "电子邮箱",
+    "formPhone": "WhatsApp/电话号码",
+    "formCountry": "国家",
+    "formProduct": "感兴趣的产品",
+    "formProductPlaceholder": "请选择产品",
+    "formMessage": "留言 / 需求详情",
+    "formMessagePlaceholder": "请说明您的采购量、规格要求及运输目的地...",
+    "formSubmit": "通过邮件发送",
+    "formNote": "点击上方按钮将打开您的邮件应用程序，并自动填充信息。",
+    "infoTitle": "联系信息",
+    "addressLabel": "工厂/办公地址",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "电子邮箱",
+    "phoneLabel": "电话",
+    "hoursLabel": "工作时间",
+    "portLabel": "装运港口",
+    "whatsappCtaTitle": "需要更快的回复？",
+    "whatsappCtaSubtitle": "通过WhatsApp直接与我们的出口团队沟通，快速获取报价。",
+    "whatsappCtaButton": "通过WhatsApp聊天"
+  },
+  "footer": {
+    "tagline": "来自印度尼西亚望加锡的椰壳炭砖、椰壳炭和半去壳椰子出口商。",
+    "navTitle": "导航",
+    "productsTitle": "产品",
+    "contactTitle": "联系我们",
+    "legalTitle": "认证资质",
+    "rights": "版权所有，保留所有权利。",
+    "certifiedTitle": "认证资质"
+  },
+  "certifications": {
+    "phytosanitary": {
+      "title": "植物检疫证书",
+      "desc": "确保农产品顺利出口的植物检疫证书。"
+    },
+    "sucofindo": {
+      "title": "SUCOFINDO 检验",
+      "desc": "发货前由独立机构进行质量与数量核验。"
+    },
+    "iso": {
+      "title": "ISO 9001:2015",
+      "desc": "贯穿我们整个生产流程的国际质量管理标准。"
+    },
+    "halal": {
+      "title": "清真认证",
+      "desc": "确保生产流程符合特定市场的清真标准。"
+    }
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "desc": "抱歉，您访问的页面不存在或已被移动。",
+    "backHome": "返回首页"
+  }
+}

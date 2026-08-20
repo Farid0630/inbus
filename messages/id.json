@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "siteName": "Inbus Solusi Bisnis",
+    "titleTemplate": "%s | Inbus Solusi Bisnis",
+    "defaultTitle": "Eksportir Charcoal Briquette, Coconut Shell Charcoal & Semi Husked Coconut dari Makassar",
+    "defaultDescription": "Produsen dan eksportir produk turunan kelapa dari Makassar, Indonesia — Charcoal Briquette, Coconut Shell Charcoal, dan Semi Husked Coconut dengan kualitas ekspor untuk pasar dunia.",
+    "keywords": "coconut charcoal briquette Indonesia, coconut shell charcoal supplier, semi husked coconut exporter, briket arang kelapa Makassar, eksportir kelapa Sulawesi Selatan"
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "products": "Produk",
+    "contact": "Kontak",
+    "getQuote": "Minta Penawaran"
+  },
+  "hero": {
+    "eyebrow": "Eksportir Produk Kelapa dari Makassar, Indonesia",
+    "title": "Kualitas Kelapa Terbaik Sulawesi,",
+    "highlight": "Siap Ekspor ke Dunia",
+    "subtitle": "Kami memproduksi dan mengekspor Charcoal Briquette, Coconut Shell Charcoal, dan Semi Husked Coconut dengan standar mutu internasional, langsung dari sentra kelapa Sulawesi Selatan.",
+    "ctaPrimary": "Lihat Produk Kami",
+    "ctaSecondary": "Hubungi via WhatsApp",
+    "statCapacityLabel": "Ton kapasitas produksi/bulan",
+    "statCountriesLabel": "Negara tujuan ekspor",
+    "statExperienceLabel": "Tahun pengalaman ekspor"
+  },
+  "home": {
+    "aboutEyebrow": "Tentang Kami",
+    "aboutTitle": "Mitra Terpercaya untuk Kebutuhan Impor Produk Kelapa Anda",
+    "aboutBody1": "Berbasis di Makassar, jantung sentra kelapa Sulawesi Selatan, kami mengolah bahan baku kelapa pilihan menjadi produk turunan berkualitas ekspor. Setiap proses produksi kami awasi ketat, mulai dari seleksi bahan baku hingga pengemasan siap kirim.",
+    "aboutBody2": "Kami bekerja sama langsung dengan petani dan pengumpul lokal untuk menjaga keberlanjutan pasokan sekaligus mendukung ekonomi masyarakat kelapa di Sulawesi Selatan.",
+    "aboutCta": "Selengkapnya Tentang Kami",
+    "productsEyebrow": "Produk Unggulan",
+    "productsTitle": "Tiga Produk Ekspor Andalan Kami",
+    "productsSubtitle": "Diproduksi sesuai spesifikasi standar internasional dan dapat disesuaikan dengan kebutuhan buyer.",
+    "whyEyebrow": "Keunggulan Kami",
+    "whyTitle": "Mengapa Buyer Memilih Kami",
+    "whySubtitle": "Kami memahami kebutuhan buyer internasional — konsisten, transparan, dan tepat waktu.",
+    "whyItems": [
+      {
+        "title": "Kualitas Terstandar",
+        "desc": "Setiap batch melalui quality control ketat sesuai spesifikasi yang disepakati sebelum pengiriman."
+      },
+      {
+        "title": "Kapasitas Produksi Stabil",
+        "desc": "Jaringan pemasok bahan baku yang luas menjaga kontinuitas produksi sepanjang tahun."
+      },
+      {
+        "title": "Pengalaman Ekspor",
+        "desc": "Berpengalaman menangani dokumen ekspor, custom clearance, dan pengiriman ke berbagai negara."
+      },
+      {
+        "title": "Harga Kompetitif",
+        "desc": "Efisiensi rantai pasok dari petani langsung memungkinkan harga FOB yang bersaing."
+      },
+      {
+        "title": "Komunikasi Responsif",
+        "desc": "Tim ekspor kami siap merespons pertanyaan, sampel, dan negosiasi dengan cepat."
+      }
+    ],
+    "processEyebrow": "Proses Kerja",
+    "processTitle": "Alur Pemesanan Ekspor",
+    "processSubtitle": "Proses sederhana dan transparan dari penawaran hingga barang tiba di pelabuhan tujuan.",
+    "processSteps": [
+      {
+        "title": "Konsultasi & Penawaran",
+        "desc": "Sampaikan kebutuhan produk, spesifikasi, dan volume Anda — kami balas dengan penawaran harga (quotation)."
+      },
+      {
+        "title": "Sampel & Kesepakatan",
+        "desc": "Kami kirimkan sampel produk untuk pengecekan kualitas sebelum kontrak dan pembayaran disepakati."
+      },
+      {
+        "title": "Produksi & Quality Control",
+        "desc": "Produksi berjalan sesuai spesifikasi, dengan pengecekan kualitas di setiap tahap."
+      },
+      {
+        "title": "Pengiriman",
+        "desc": "Barang dikemas, didokumentasikan, dan dikirim dari Pelabuhan Makassar sesuai term yang disepakati."
+      }
+    ],
+    "certEyebrow": "Legalitas & Sertifikasi",
+    "certTitle": "Diproduksi Sesuai Standar Ekspor",
+    "certSubtitle": "Kelengkapan dokumen dan sertifikasi untuk memastikan kelancaran proses impor di negara tujuan.",
+    "ctaTitle": "Siap Memulai Kerja Sama Ekspor?",
+    "ctaSubtitle": "Kirimkan kebutuhan produk dan volume Anda, tim kami akan membalas dengan penawaran dalam 1x24 jam.",
+    "ctaButtonPrimary": "Minta Penawaran Sekarang",
+    "ctaButtonSecondary": "Chat via WhatsApp"
+  },
+  "about": {
+    "eyebrow": "Tentang Kami",
+    "title": "Menghubungkan Kelapa Sulawesi dengan Pasar Dunia",
+    "intro": "Inbus Solusi Bisnis adalah produsen dan eksportir produk turunan kelapa yang berbasis di Makassar, Sulawesi Selatan — salah satu wilayah penghasil kelapa terbaik di Indonesia.",
+    "storyTitle": "Perjalanan Kami",
+    "storyBody1": "Berawal dari kedekatan dengan komunitas petani kelapa lokal, kami membangun fasilitas produksi yang berfokus pada tiga produk utama: Charcoal Briquette, Coconut Shell Charcoal, dan Semi Husked Coconut.",
+    "storyBody2": "Seiring waktu, jaringan distribusi kami berkembang ke berbagai negara, didorong oleh komitmen terhadap konsistensi kualitas dan ketepatan waktu pengiriman.",
+    "missionTitle": "Misi Kami",
+    "missionBody": "Menyediakan produk turunan kelapa berkualitas ekspor secara konsisten, sambil mendukung kesejahteraan petani dan komunitas kelapa di Sulawesi Selatan.",
+    "visionTitle": "Visi Kami",
+    "visionBody": "Menjadi eksportir produk kelapa terpercaya dari Indonesia Timur yang dikenal atas kualitas, keberlanjutan, dan pelayanan yang responsif.",
+    "valuesTitle": "Nilai yang Kami Pegang",
+    "valuesSubtitle": "Prinsip yang menjadi pedoman kami dalam setiap kerja sama.",
+    "values": [
+      {
+        "title": "Kualitas Konsisten",
+        "desc": "Setiap pengiriman melewati standar quality control yang sama, tanpa kompromi."
+      },
+      {
+        "title": "Keberlanjutan",
+        "desc": "Kami mendukung praktik pengolahan kelapa yang ramah lingkungan dan berkelanjutan."
+      },
+      {
+        "title": "Transparansi",
+        "desc": "Komunikasi terbuka soal harga, spesifikasi, dan jadwal pengiriman."
+      },
+      {
+        "title": "Kemitraan Jangka Panjang",
+        "desc": "Kami membangun hubungan bisnis yang berkelanjutan, bukan transaksi sekali jalan."
+      }
+    ],
+    "statsTitle": "Kami dalam Angka"
+  },
+  "products": {
+    "eyebrow": "Produk Kami",
+    "title": "Produk Ekspor Turunan Kelapa",
+    "subtitle": "Tiga produk utama yang kami produksi dengan standar mutu ekspor, siap disesuaikan dengan spesifikasi buyer.",
+    "viewDetails": "Lihat Detail Produk",
+    "specsTitle": "Spesifikasi Teknis",
+    "applicationsTitle": "Aplikasi & Penggunaan",
+    "packagingMoqTitle": "Kemasan & Minimum Order",
+    "ctaTitle": "Tertarik dengan Produk Ini?",
+    "ctaSubtitle": "Hubungi kami untuk mendapatkan penawaran harga dan sampel produk.",
+    "requestQuote": "Minta Penawaran",
+    "backToProducts": "Kembali ke Semua Produk",
+    "otherProducts": "Produk Lainnya",
+    "specLabels": {
+      "shape": "Bentuk",
+      "fixedCarbon": "Fixed Carbon",
+      "ashContent": "Kadar Abu (Ash Content)",
+      "moisture": "Kadar Air (Moisture)",
+      "volatileMatter": "Volatile Matter",
+      "calorificValue": "Nilai Kalori (Calorific Value)",
+      "burningTime": "Lama Waktu Bakar",
+      "sulfurContent": "Kadar Sulfur",
+      "grade": "Grade",
+      "size": "Ukuran",
+      "netWeight": "Berat Bersih",
+      "huskRemaining": "Sisa Sabut",
+      "shelfLife": "Masa Simpan",
+      "harvestAge": "Usia Panen",
+      "packaging": "Kemasan",
+      "moq": "Minimum Order (MOQ)",
+      "loadability": "Kapasitas Muat"
+    },
+    "items": {
+      "charcoal-briquette": {
+        "name": "Charcoal Briquette",
+        "tagline": "Briket Arang Kelapa Premium",
+        "shortDesc": "Briket arang kelapa padat dengan nilai kalori tinggi dan abu rendah, ideal untuk shisha, BBQ, dan kebutuhan bahan bakar industri.",
+        "description": [
+          "Charcoal Briquette kami dibuat dari serbuk arang tempurung kelapa pilihan yang dipadatkan tanpa bahan kimia berbahaya, menghasilkan bahan bakar dengan nyala api stabil, panas tinggi, dan minim asap.",
+          "Tersedia dalam berbagai bentuk (cube, hexagonal, pillow, finger, flat) sesuai kebutuhan pasar, mulai dari kebutuhan rumah tangga, restoran BBQ, hingga lounge shisha di berbagai negara."
+        ],
+        "applications": [
+          "Bahan bakar shisha/hookah",
+          "BBQ & grilling restoran",
+          "Kebutuhan rumah tangga",
+          "Industri pemanas ramah lingkungan",
+          "Ekspor ritel & horeca"
+        ]
+      },
+      "coconut-shell-charcoal": {
+        "name": "Coconut Shell Charcoal",
+        "tagline": "Arang Tempurung Kelapa Mentah",
+        "shortDesc": "Arang tempurung kelapa mentah (raw charcoal) hasil karbonisasi tempurung pilihan, bahan baku utama untuk briket dan karbon aktif.",
+        "description": [
+          "Coconut Shell Charcoal adalah hasil karbonisasi tempurung kelapa pilihan melalui proses pembakaran terkontrol, menghasilkan arang dengan fixed carbon tinggi dan kadar abu rendah.",
+          "Produk ini banyak digunakan sebagai bahan baku pembuatan briket, karbon aktif (activated carbon), maupun sebagai bahan bakar industri langsung."
+        ],
+        "applications": [
+          "Bahan baku pembuatan briket",
+          "Bahan baku karbon aktif (activated carbon)",
+          "Bahan bakar industri",
+          "Bahan baku metalurgi",
+          "Ekspor curah (bulk) ke pabrik pengolahan"
+        ]
+      },
+      "semi-husked-coconut": {
+        "name": "Semi Husked Coconut",
+        "tagline": "Kelapa Setengah Kupas Kualitas Ekspor",
+        "shortDesc": "Kelapa tua segar yang dikupas sebagian, memudahkan penanganan dan pembukaan di negara tujuan sambil menjaga kesegaran air dan daging kelapa.",
+        "description": [
+          "Semi Husked Coconut adalah kelapa tua pilihan yang sabutnya dikupas sebagian, menyisakan bagian sabut di pangkal sebagai pegangan sekaligus pelindung selama pengiriman jarak jauh.",
+          "Proses pemanenan dan penanganan pascapanen kami rancang untuk menjaga kesegaran air dan daging kelapa hingga tiba di tangan buyer atau konsumen akhir."
+        ],
+        "applications": [
+          "Konsumsi air kelapa segar",
+          "Ritel supermarket & pasar buah",
+          "Bahan baku olahan santan/VCO",
+          "Ekspor kelapa muda & tua segar",
+          "Kebutuhan horeca (hotel, restoran, katering)"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Hubungi Kami",
+    "title": "Mari Diskusikan Kebutuhan Ekspor Anda",
+    "subtitle": "Isi formulir di bawah atau hubungi kami langsung via WhatsApp/email — tim kami siap membantu.",
+    "formTitle": "Kirim Pertanyaan / Permintaan Penawaran",
+    "formName": "Nama Lengkap",
+    "formEmail": "Alamat Email",
+    "formPhone": "Nomor WhatsApp/Telepon",
+    "formCountry": "Negara",
+    "formProduct": "Produk yang Diminati",
+    "formProductPlaceholder": "Pilih produk",
+    "formMessage": "Pesan / Detail Kebutuhan",
+    "formMessagePlaceholder": "Jelaskan volume, spesifikasi, dan tujuan pengiriman Anda...",
+    "formSubmit": "Kirim via Email",
+    "formNote": "Tombol di atas akan membuka aplikasi email Anda dengan pesan yang sudah terisi otomatis.",
+    "infoTitle": "Informasi Kontak",
+    "addressLabel": "Alamat Pabrik/Kantor",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Email",
+    "phoneLabel": "Telepon",
+    "hoursLabel": "Jam Operasional",
+    "portLabel": "Pelabuhan Muat",
+    "whatsappCtaTitle": "Butuh Respon Lebih Cepat?",
+    "whatsappCtaSubtitle": "Chat langsung dengan tim ekspor kami via WhatsApp untuk penawaran cepat.",
+    "whatsappCtaButton": "Chat via WhatsApp"
+  },
+  "footer": {
+    "tagline": "Eksportir Charcoal Briquette, Coconut Shell Charcoal, dan Semi Husked Coconut dari Makassar, Indonesia.",
+    "navTitle": "Navigasi",
+    "productsTitle": "Produk",
+    "contactTitle": "Kontak",
+    "legalTitle": "Sertifikasi",
+    "rights": "Seluruh hak cipta dilindungi.",
+    "certifiedTitle": "Bersertifikasi"
+  },
+  "certifications": {
+    "phytosanitary": {
+      "title": "Phytosanitary Certificate",
+      "desc": "Sertifikat karantina tumbuhan untuk kelancaran ekspor produk pertanian."
+    },
+    "sucofindo": {
+      "title": "SUCOFINDO Inspection",
+      "desc": "Inspeksi independen untuk verifikasi kualitas dan kuantitas sebelum pengiriman."
+    },
+    "iso": {
+      "title": "ISO 9001:2015",
+      "desc": "Standar manajemen mutu internasional dalam proses produksi kami."
+    },
+    "halal": {
+      "title": "Sertifikat Halal",
+      "desc": "Menjamin proses produksi memenuhi standar halal untuk pasar tertentu."
+    }
+  },
+  "notFound": {
+    "title": "Halaman Tidak Ditemukan",
+    "desc": "Maaf, halaman yang Anda cari tidak tersedia atau telah dipindahkan.",
+    "backHome": "Kembali ke Beranda"
+  }
+}

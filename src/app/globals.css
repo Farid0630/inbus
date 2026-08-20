@@ -1,26 +1,61 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-ink: #1b1611;
+  --color-ink-soft: #322921;
+  --color-forest: #1f5c43;
+  --color-forest-light: #2f7a57;
+  --color-forest-dark: #163f2e;
+  --color-gold: #c9974a;
+  --color-gold-light: #e0b672;
+  --color-sand: #f8f3e9;
+  --color-cream: #fffcf7;
+  --color-line: #e7dfcf;
+  --color-muted: #6b6055;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-forest: var(--color-forest);
+  --color-forest-light: var(--color-forest-light);
+  --color-forest-dark: var(--color-forest-dark);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --color-sand: var(--color-sand);
+  --color-cream: var(--color-cream);
+  --color-line: var(--color-line);
+  --color-muted: var(--color-muted);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-gold-light);
+  color: var(--color-ink);
+}
+
+.bg-grain {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(27, 22, 17, 0.06) 1px,
+    transparent 0
+  );
+  background-size: 22px 22px;
+}
+
+.bg-ember {
+  background-image: url("/images/pattern-ember.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

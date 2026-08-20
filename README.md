@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Inbus Solusi Bisnis — Website
 
-## Getting Started
+Website company profile & katalog ekspor untuk produk turunan kelapa
+(Charcoal Briquette, Coconut Shell Charcoal, Semi Husked Coconut) dari
+Makassar. Dibangun dengan Next.js 16 (App Router) + React 19 +
+TypeScript + Tailwind CSS v4, dengan dukungan 4 bahasa (Indonesia,
+English, Arabic, Chinese) via `next-intl`.
 
-First, run the development server:
+## ⚠️ Sebelum go-live: ganti data placeholder
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Semua data perusahaan saat ini adalah **placeholder** dan harus diganti
+dengan data asli sebelum website di-publish. Cukup edit satu file ini:
+
+```
+src/lib/site-config.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Isinya: nama perusahaan, alamat, nomor WhatsApp, email, telepon,
+media sosial, kapasitas produksi, dan daftar sertifikasi. Setiap field
+placeholder ditandai komentar `// TODO`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Spesifikasi teknis produk (fixed carbon, moisture, kemasan, MOQ, dll)
+ada di:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/lib/products.ts
+```
 
-## Learn More
+Angka-angka di sana adalah kisaran umum industri untuk keperluan
+prototipe — ganti dengan hasil uji lab/spesifikasi pabrik Anda yang
+sebenarnya.
 
-To learn more about Next.js, take a look at the following resources:
+Foto produk/pabrik belum ada (masih pakai ikon + gradient sebagai
+placeholder visual). Setelah ada foto asli, ganti area terkait di:
+- `src/components/ProductCard.tsx` (thumbnail kartu produk)
+- `src/app/[locale]/page.tsx` (bagian "About teaser")
+- `src/app/[locale]/products/[slug]/page.tsx` (header produk)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Menjalankan secara lokal
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm install
+npm run dev
+```
 
-## Deploy on Vercel
+Buka [http://localhost:3000](http://localhost:3000) — otomatis redirect
+ke `/id` (bahasa default).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Struktur konten & terjemahan
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Semua teks yang tampil di halaman ada di 4 file JSON ini, dengan
+struktur key yang identik satu sama lain:
+
+```
+messages/id.json   (Bahasa Indonesia — sumber utama)
+messages/en.json   (English)
+messages/ar.json   (Arabic — otomatis render RTL)
+messages/zh.json   (Chinese Simplified)
+```
+
+Untuk mengubah teks di halaman manapun, cari key yang sesuai di
+keempat file tersebut dan edit isinya (jangan ubah nama key-nya, hanya
+value-nya).
+
+## Struktur halaman
+
+```
+src/app/[locale]/
+├── page.tsx              → Beranda
+├── about/page.tsx         → Tentang Kami
+├── products/page.tsx      → Daftar Produk
+├── products/[slug]/page.tsx → Detail produk (charcoal-briquette, coconut-shell-charcoal, semi-husked-coconut)
+└── contact/page.tsx       → Kontak (form via mailto + info WhatsApp)
+```
+
+Form kontak saat ini bersifat client-side saja (membuka aplikasi email
+via `mailto:` dengan isi form yang sudah terisi otomatis) — belum
+terhubung ke backend/email service. Jika ingin form terkirim langsung
+tanpa membuka aplikasi email, perlu ditambahkan API route + layanan
+email (mis. Resend/Nodemailer) secara terpisah.
+
+## SEO
+
+- Setiap halaman punya `generateMetadata` sendiri (title, description).
+- `sitemap.xml` dan `robots.txt` digenerate otomatis
+  (`src/app/sitemap.ts`, `src/app/robots.ts`), termasuk hreflang
+  alternate untuk 4 bahasa.
+- Structured data (JSON-LD `Organization`) disisipkan di
+  `src/app/[locale]/layout.tsx`.
+- Domain di `siteConfig.domain` (`src/lib/site-config.ts`) dipakai
+  sebagai basis semua URL absolut — **wajib diganti** ke domain asli
+  sebelum deploy, kalau tidak sitemap/canonical URL akan salah.
+
+## Build & deploy
+
+```bash
+npm run build
+npm run start
+```
+
+Project ini pakai Next.js server biasa (bukan static export), jadi
+cocok di-deploy ke Vercel atau hosting Node.js apa pun — bukan ke
+Apache/XAMPP secara langsung.
