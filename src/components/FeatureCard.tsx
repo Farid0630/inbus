@@ -15,7 +15,7 @@ export function FeatureCard({
   return (
     <div
       className={clsx(
-        "group flex flex-col gap-4 rounded-2xl border p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-ink/5",
+        "group flex flex-col gap-4 rounded-2xl border p-6 transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-ink/5",
         tone === "light" ? "border-line bg-cream" : "border-white/10 bg-white/5",
       )}
     >

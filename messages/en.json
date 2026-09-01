@@ -118,7 +118,24 @@
         "desc": "We build lasting business relationships, not one-off transactions."
       }
     ],
-    "statsTitle": "Us in Numbers"
+    "facilityEyebrow": "Facility & Quality",
+    "facilityTitle": "Export-Grade Processing & Quality Assurance",
+    "facilityBody1": "Our Makassar production facility operates under strict quality oversight across every phase — from coconut shell sorting and carbonization control to organic tapioca binder mixing and hydraulic briquette compression.",
+    "facilityBody2": "Every batch undergoes rigorous in-house laboratory testing for low ash content, maximum fixed carbon, and sustained combustion duration before export packaging.",
+    "facilityPoints": [
+      "Rigorous lab analysis for calorific value, ash content, and moisture",
+      "Direct logistics gateway adjacent to Makassar Soekarno-Hatta Export Port",
+      "Export-grade heavy-duty packaging (inner plastic, custom master box, shrink pallet)",
+      "Comprehensive third-party inspection support (SUCOFINDO / SGS)"
+    ],
+    "certSectionEyebrow": "Compliance & Standards",
+    "certSectionTitle": "Export Quality Certifications & Legal Compliance",
+    "certSectionSubtitle": "All commodities and production lines are supported by complete official documentation for smooth customs clearance worldwide.",
+    "statsTitle": "Us in Numbers",
+    "ctaTitle": "Ready to Partner with a Trusted Exporter?",
+    "ctaSubtitle": "Discuss your custom specifications, order volume, and shipping requirements directly with our international export team.",
+    "ctaPrimary": "Request a Quotation",
+    "ctaSecondary": "Contact via WhatsApp"
   },
   "products": {
     "eyebrow": "Our Products",
@@ -199,6 +216,38 @@
           "Raw material for coconut milk/VCO processing",
           "Fresh young and mature coconut export",
           "HoReCa needs (hotels, restaurants, catering)"
+        ]
+      },
+      "kopra-hitam": {
+        "name": "Kopra Hitam",
+        "tagline": "Industrial Black Copra",
+        "shortDesc": "Black copra (regular) is an industrial-grade commodity extensively dried via smoke-oven method for low moisture content and quality stability.",
+        "description": [
+          "Our black copra is processed from selected mature coconuts through a smoke-oven drying method, yielding copra with very low moisture content, stable quality, and long shelf life during long-distance shipping.",
+          "Widely used as raw material for RBD Coconut Oil manufacturing, animal feed (copra meal), and various other coconut derivative industries."
+        ],
+        "applications": [
+          "RBD Coconut Oil raw material",
+          "Animal feed (copra meal)",
+          "Oleochemical industry",
+          "Cosmetics & soap raw material",
+          "Bulk export to processing plants"
+        ]
+      },
+      "kopra-putih": {
+        "name": "Kopra Putih",
+        "tagline": "Edible Premium White Copra",
+        "shortDesc": "Our edible white copra is produced through a modern hygienic drying process to prevent mold, bacteria, and aflatoxin contamination for food-grade markets.",
+        "description": [
+          "Our white copra uses a smoke-free drying method at controlled temperatures, producing bright white copra with a neutral aroma and free from aflatoxin contamination.",
+          "Suitable for edible markets and food industry — coconut milk, VCO (Virgin Coconut Oil), desiccated coconut, and other premium coconut-derived products."
+        ],
+        "applications": [
+          "VCO (Virgin Coconut Oil) raw material",
+          "Coconut milk & processed coconut products",
+          "Desiccated coconut flour",
+          "Food & beverage industry",
+          "Premium edible market export"
         ]
       }
     }

@@ -34,7 +34,7 @@ export function SectionHeading({
       ) : null}
       <h2
         className={clsx(
-          "font-display text-3xl leading-tight font-semibold text-balance sm:text-4xl",
+          "font-display text-2xl leading-tight font-semibold text-balance sm:text-3xl lg:text-4xl",
           tone === "light" ? "text-ink" : "text-cream",
         )}
       >

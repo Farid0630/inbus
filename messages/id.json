@@ -118,7 +118,24 @@
         "desc": "Kami membangun hubungan bisnis yang berkelanjutan, bukan transaksi sekali jalan."
       }
     ],
-    "statsTitle": "Kami dalam Angka"
+    "facilityEyebrow": "Fasilitas & Mutu",
+    "facilityTitle": "Standar Pengolahan & Kontrol Mutu Ekspor",
+    "facilityBody1": "Fasilitas produksi kami di Makassar dilengkapi dengan sistem pengawasan mutu berkesinambungan — mulai dari penyortiran tempurung kelapa, kontrol karbonisasi, pencampuran perekat tapioka alami, hingga pemadatan briket.",
+    "facilityBody2": "Setiap batch melalui pengujian laboratorium internal untuk memastikan kadar abu (ash content) rendah, fixed carbon tinggi, dan waktu bakar optimal sebelum dikemas dengan standar ekspor.",
+    "facilityPoints": [
+      "Pengujian laboratorium untuk kalori, kadar abu, dan kelembapan",
+      "Akses logistik strategis dekat Pelabuhan Ekspor Soekarno-Hatta Makassar",
+      "Standar pengemasan ekspor heavy-duty (inner plastic, master box, pallet)",
+      "Verifikasi dan dukungan inspeksi pihak ketiga independen (SUCOFINDO / SGS)"
+    ],
+    "certSectionEyebrow": "Kepatuhan & Sertifikasi",
+    "certSectionTitle": "Jaminan Kualitas & Legalitas Ekspor",
+    "certSectionSubtitle": "Seluruh proses produksi dan komoditas kami didukung dokumen resmi untuk kelancaran clearance bea cukai di negara tujuan.",
+    "statsTitle": "Kami dalam Angka",
+    "ctaTitle": "Siap Bermitra dengan Eksportir Terpercaya?",
+    "ctaSubtitle": "Diskusikan spesifikasi produk, volume pemesanan, dan kebutuhan dokumen ekspor Anda langsung bersama tim kami.",
+    "ctaPrimary": "Minta Penawaran Harga",
+    "ctaSecondary": "Hubungi via WhatsApp"
   },
   "products": {
     "eyebrow": "Produk Kami",
@@ -199,6 +216,38 @@
           "Bahan baku olahan santan/VCO",
           "Ekspor kelapa muda & tua segar",
           "Kebutuhan horeca (hotel, restoran, katering)"
+        ]
+      },
+      "kopra-hitam": {
+        "name": "Kopra Hitam",
+        "tagline": "Kopra Hitam Industri",
+        "shortDesc": "Kopra hitam (reguler) merupakan komoditas andalan skala industri yang dikeringkan secara ekstensif menggunakan pengasapan oven untuk kadar air rendah dan kestabilan mutu.",
+        "description": [
+          "Kopra hitam kami diproses dari kelapa tua pilihan melalui metode pengeringan asap-oven yang menghasilkan kopra dengan kadar air sangat rendah, stabil, dan tahan lama selama pengiriman jarak jauh.",
+          "Produk ini banyak digunakan sebagai bahan baku industri minyak kelapa (RBD Coconut Oil), pakan ternak, dan berbagai produk turunan kelapa lainnya."
+        ],
+        "applications": [
+          "Bahan baku minyak kelapa (RBD Coconut Oil)",
+          "Pakan ternak (kopra meal)",
+          "Industri oleokimia",
+          "Bahan baku kosmetik dan sabun",
+          "Ekspor curah ke pabrik pengolahan"
+        ]
+      },
+      "kopra-putih": {
+        "name": "Kopra Putih",
+        "tagline": "Kopra Putih Edible Premium",
+        "shortDesc": "Kopra putih edible kami dihasilkan melalui proses pengeringan modern yang higienis guna mencegah kontaminasi jamur, bakteri, maupun aflatoksin untuk pasar pangan.",
+        "description": [
+          "Kopra putih kami menggunakan metode pengeringan tanpa asap (smoke-free) di suhu terkontrol, menghasilkan kopra berwarna putih bersih, aroma netral, dan bebas aflatoksin.",
+          "Cocok untuk pasar edible dan industri makanan — santan, VCO (Virgin Coconut Oil), tepung kelapa, dan produk olahan kelapa premium lainnya."
+        ],
+        "applications": [
+          "Bahan baku VCO (Virgin Coconut Oil)",
+          "Santan dan produk olahan kelapa",
+          "Tepung kelapa (desiccated coconut)",
+          "Industri makanan dan minuman",
+          "Ekspor ke pasar edible premium"
         ]
       }
     }

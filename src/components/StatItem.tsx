@@ -27,7 +27,7 @@ export function StatItem({ value, label }: { value: string; label: string }) {
         observer.disconnect();
 
         setDisplay(`0${suffix}`);
-        const duration = 1200;
+        const duration = 700;
         const start = performance.now();
 
         const tick = (now: number) => {
@@ -39,7 +39,7 @@ export function StatItem({ value, label }: { value: string; label: string }) {
 
         requestAnimationFrame(tick);
       },
-      { threshold: 0.4 },
+      { threshold: 0.1 },
     );
 
     observer.observe(el);

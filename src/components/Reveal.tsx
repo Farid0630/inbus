@@ -37,7 +37,7 @@ export function Reveal({
           observer.unobserve(el);
         }
       },
-      { threshold: 0.15, rootMargin: "0px 0px -10% 0px" },
+      { threshold: 0.01, rootMargin: "100px 0px 50px 0px" },
     );
 
     observer.observe(el);
@@ -49,8 +49,8 @@ export function Reveal({
       ref={ref}
       style={visible && delay ? { transitionDelay: `${delay}ms` } : undefined}
       className={clsx(
-        "transition-all duration-700 ease-out",
-        visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0",
+        "transition-[opacity,transform] duration-500 ease-out",
+        visible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0",
         className,
       )}
     >
@@ -58,3 +58,4 @@ export function Reveal({
     </div>
   );
 }
+

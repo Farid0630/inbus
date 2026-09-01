@@ -1,10 +1,12 @@
 import type { LucideIcon } from "lucide-react";
-import { Flame, Package, Nut } from "lucide-react";
+import { Flame, Package, Nut, Layers, Sparkles } from "lucide-react";
 
 export type ProductSlug =
   | "charcoal-briquette"
   | "coconut-shell-charcoal"
-  | "semi-husked-coconut";
+  | "semi-husked-coconut"
+  | "kopra-hitam"
+  | "kopra-putih";
 
 export type SpecKey =
   | "shape"
@@ -86,6 +88,32 @@ export const products: ProductDefinition[] = [
       { key: "packaging", value: "Mesh bag / sack, 50 – 80 pcs per unit" },
       { key: "loadability", value: "approx. 20,000 – 23,000 pcs / 40ft container" },
       { key: "moq", value: "1 x 40ft container" },
+    ],
+  },
+  {
+    slug: "kopra-hitam",
+    icon: Layers,
+    image: "/images/kopra-hitam.jpg",
+    specs: [
+      { key: "grade", value: "Grade A / Grade B (Industri)" },
+      { key: "moisture", value: "≤ 6% (oven-dried)" },
+      { key: "ashContent", value: "≤ 1%" },
+      { key: "size", value: "Halves / pieces (customizable)" },
+      { key: "packaging", value: "Karung 50 kg / jumbo bag" },
+      { key: "moq", value: "1 x 20ft container (approx. 18–20 ton)" },
+    ],
+  },
+  {
+    slug: "kopra-putih",
+    icon: Sparkles,
+    image: "/images/kopra-putih.jpg",
+    specs: [
+      { key: "grade", value: "Edible Premium / Grade A" },
+      { key: "moisture", value: "≤ 5% (smoke-free drying)" },
+      { key: "ashContent", value: "≤ 0.8%" },
+      { key: "size", value: "Halves / desiccated" },
+      { key: "packaging", value: "Karung 50 kg / vacuum pack" },
+      { key: "moq", value: "1 x 20ft container (approx. 18–20 ton)" },
     ],
   },
 ];

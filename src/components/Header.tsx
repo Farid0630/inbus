@@ -6,7 +6,6 @@ import { useTranslations } from "next-intl";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Container } from "./Container";
-import { LanguageSwitcher } from "./LanguageSwitcher";
 import { siteConfig, whatsappLink } from "@/lib/site-config";
 import clsx from "clsx";
 
@@ -17,10 +16,17 @@ export function Header() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
+    let rafId = 0;
+    const onScroll = () => {
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => setScrolled(window.scrollY > 8));
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(rafId);
+    };
   }, []);
 
   const links = [
@@ -33,7 +39,7 @@ export function Header() {
   return (
     <header
       className={clsx(
-        "sticky top-0 z-50 border-b bg-cream/90 backdrop-blur transition-shadow duration-300",
+        "sticky top-0 z-50 border-b bg-cream/95 sm:bg-cream/90 sm:backdrop-blur transition-shadow duration-300",
         scrolled ? "border-line shadow-sm shadow-ink/5" : "border-transparent",
       )}
     >
@@ -72,12 +78,11 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <LanguageSwitcher />
           <a
-            href={whatsappLink("Hello, I'd like to request a quote.")}
+            href={whatsappLink("Halo, saya tertarik dengan produk ekspor kelapa Anda.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full bg-forest px-4 py-2 text-sm font-semibold text-cream transition-colors hover:bg-forest-dark"
+            className="inline-flex items-center gap-1.5 rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-forest-dark"
           >
             {t("getQuote")}
             <ArrowUpRight className="size-4" aria-hidden />
@@ -94,34 +99,37 @@ export function Header() {
         </button>
       </Container>
 
-      {open ? (
-        <div className="border-t border-line bg-cream lg:hidden">
-          <Container className="flex flex-col gap-1 py-4">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-base font-medium text-ink-soft hover:bg-sand hover:text-forest"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <div className="mt-2 flex items-center justify-between gap-3 border-t border-line pt-4">
-              <LanguageSwitcher />
-              <a
-                href={whatsappLink("Hello, I'd like to request a quote.")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-full bg-forest px-4 py-2 text-sm font-semibold text-cream"
-              >
-                {t("getQuote")}
-                <ArrowUpRight className="size-4" aria-hidden />
-              </a>
-            </div>
-          </Container>
-        </div>
-      ) : null}
+      {/* Mobile menu — always in DOM, animated via max-height */}
+      <div
+        className={clsx(
+          "overflow-hidden border-t bg-cream transition-all duration-300 ease-in-out lg:hidden",
+          open ? "max-h-96 border-line opacity-100" : "max-h-0 border-transparent opacity-0",
+        )}
+      >
+        <Container className="flex flex-col gap-1 py-4">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="flex min-h-[44px] items-center rounded-xl px-3 py-2.5 text-base font-medium text-ink-soft hover:bg-sand hover:text-forest"
+            >
+              {link.label}
+            </Link>
+          ))}
+          <div className="mt-2 flex items-center justify-end gap-3 border-t border-line pt-4">
+            <a
+              href={whatsappLink("Halo, saya tertarik dengan produk ekspor kelapa Anda.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-1.5 rounded-full bg-forest px-4 py-3 text-sm font-semibold text-cream sm:w-auto"
+            >
+              {t("getQuote")}
+              <ArrowUpRight className="size-4" aria-hidden />
+            </a>
+          </div>
+        </Container>
+      </div>
     </header>
   );
 }

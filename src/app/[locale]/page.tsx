@@ -39,54 +39,82 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
 
   return (
     <>
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-ink">
-        <Image
-          src="/images/charcoal-hero.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="bg-grain absolute inset-0 opacity-60" />
-        <div className="absolute inset-0 bg-linear-to-r from-ink via-ink/85 to-ink/45" />
-        <div className="absolute inset-0 bg-linear-to-t from-ink via-ink/10 to-ink/50" />
-        <Container className="relative flex flex-col gap-10 py-20 sm:py-28">
-          <MountReveal className="flex max-w-3xl flex-col gap-6">
-            <span className="inline-flex w-fit items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-gold-light uppercase">
+      {/* Hero — Immersive Cinema Canvas Concept */}
+      <section className="relative flex min-h-[92dvh] flex-col justify-between overflow-hidden bg-ink pt-6 pb-12 sm:min-h-[85vh] sm:py-20 lg:min-h-[92vh] lg:py-24">
+        {/* Continuous Cinematic Video Background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          poster="/images/charcoal-hero.jpg"
+          className="absolute inset-0 h-full w-full object-cover object-[center_35%]"
+        >
+          <source src="/images/vidio-hero.mp4" type="video/mp4" />
+        </video>
+
+        {/* Multi-Layered Atmospheric Lighting Overlays */}
+        {/* Top Vignette (for header/badge clarity) */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-linear-to-b from-ink/90 via-ink/40 to-transparent" />
+        {/* Bottom Cinematic Gradient (anchors the text and stats into dark theme) */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[75%] bg-linear-to-t from-ink via-ink/85 via-45% to-transparent" />
+        {/* Desktop Left Reading Vignette */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 hidden w-[60%] bg-linear-to-r from-ink/90 via-ink/50 to-transparent sm:block" />
+        {/* Subtle Grain & Ambient Embers */}
+        <div className="bg-grain pointer-events-none absolute inset-0 opacity-20" />
+        <EmberParticles className="pointer-events-none absolute inset-0" density={14} />
+
+        {/* Top Live Badge */}
+        <Container className="relative z-10">
+          <div className="flex items-center">
+            <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-ink/80 px-3.5 py-1.5 text-[11px] font-semibold tracking-wider text-gold-light uppercase shadow-lg shadow-black/30">
+              <span className="relative flex size-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold-light opacity-75" />
+                <span className="relative inline-flex size-2 rounded-full bg-gold" />
+              </span>
               {tHero("eyebrow")}
             </span>
-            <h1 className="font-display text-4xl leading-tight font-bold text-balance text-cream sm:text-5xl lg:text-6xl">
-              {tHero("title")} <span className="text-gold-light">{tHero("highlight")}</span>
+          </div>
+        </Container>
+
+        {/* Main Content & Bottom Stats Hub */}
+        <Container className="relative z-10 flex flex-col gap-8 sm:gap-10">
+          <div className="flex max-w-3xl flex-col gap-4 sm:gap-6">
+            <h1 className="font-display text-3xl leading-[1.12] font-bold text-balance text-cream sm:text-5xl lg:text-6xl">
+              {tHero("title")}{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-light via-gold to-gold-light">
+                {tHero("highlight")}
+              </span>
             </h1>
-            <p className="max-w-xl text-lg leading-relaxed text-cream/70">
+
+            <p className="max-w-xl text-sm leading-relaxed text-cream/80 sm:text-lg">
               {tHero("subtitle")}
             </p>
-            <div className="flex flex-wrap gap-4 pt-2">
+
+            {/* Action Buttons */}
+            <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap sm:items-center">
               <Link
                 href="/products"
-                className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3.5 text-sm font-semibold text-ink transition-colors hover:bg-gold-light"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-ink shadow-lg shadow-gold/15 transition-all hover:bg-gold-light hover:shadow-gold/25 active:scale-[0.98] sm:w-auto"
               >
                 {tHero("ctaPrimary")}
                 <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
               </Link>
               <a
-                href={whatsappLink("Hello, I'd like to request a quote.")}
+                href={whatsappLink("Halo, saya tertarik dengan produk ekspor kelapa Inbus Solusi Bisnis.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-white/10"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-7 py-3.5 text-sm font-semibold text-cream transition-all hover:border-gold/40 hover:bg-white/10 active:scale-[0.98] sm:w-auto"
               >
                 {tHero("ctaSecondary")}
-                <ArrowUpRight className="size-4" aria-hidden />
+                <ArrowUpRight className="size-4 text-gold-light" aria-hidden />
               </a>
             </div>
-          </MountReveal>
+          </div>
 
-          <MountReveal
-            delay={350}
-            className="grid grid-cols-1 gap-6 border-t border-white/10 pt-8 sm:grid-cols-3"
-          >
+          {/* 3-Column Glassmorphism Stats Bar */}
+          <div className="grid grid-cols-3 gap-3 border-t border-white/15 pt-6 sm:gap-6 sm:pt-8">
             <StatItem
               value={`${siteConfig.export.monthlyCapacityTons}+`}
               label={tHero("statCapacityLabel")}
@@ -99,7 +127,7 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
               value={`${new Date().getFullYear() - siteConfig.foundedYear}+`}
               label={tHero("statExperienceLabel")}
             />
-          </MountReveal>
+          </div>
         </Container>
       </section>
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { MapPin, Phone, Mail, Clock, Anchor, ArrowUpRight } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Anchor, ArrowUpRight, MessageCircle } from "lucide-react";
 import { Container } from "@/components/Container";
 import { ContactForm } from "@/components/ContactForm";
 import { Reveal } from "@/components/Reveal";
@@ -32,7 +33,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
       href: siteConfig.address.mapsUrl,
     },
     {
-      icon: Phone,
+      icon: MessageCircle,
       label: t("whatsappLabel"),
       value: siteConfig.contact.whatsappDisplay,
       href: whatsappLink("Hello, I'd like to request a quote."),
@@ -63,18 +64,30 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
 
   return (
     <>
-      <section className="bg-grain relative overflow-hidden bg-ink py-20 sm:py-24">
-        <div className="absolute inset-0 bg-linear-to-br from-forest-dark via-ink to-ink" />
-        <EmberParticles className="pointer-events-none absolute inset-0" density={35} />
+      <section className="relative overflow-hidden bg-ink py-20 sm:py-28">
+        <Image
+          src="/images/pabrikBriket.jpg"
+          alt="Inbus Factory & Contact"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-25"
+        />
+        <div className="absolute inset-0 bg-linear-to-b from-ink/90 via-ink/80 to-ink" />
+        <div className="absolute inset-0 bg-linear-to-r from-forest-dark/60 via-transparent to-ink/70" />
+        <div className="bg-grain pointer-events-none absolute inset-0 opacity-20" />
+        <EmberParticles className="pointer-events-none absolute inset-0" density={14} />
         <Container className="relative flex flex-col items-center gap-5 text-center">
           <Reveal className="flex flex-col items-center gap-5">
             <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-gold-light uppercase">
               {t("eyebrow")}
             </span>
-            <h1 className="font-display max-w-2xl text-4xl font-bold text-balance text-cream sm:text-5xl">
+            <h1 className="font-display max-w-2xl text-3xl font-bold text-balance text-cream sm:text-5xl lg:text-6xl">
               {t("title")}
             </h1>
-            <p className="max-w-2xl text-lg leading-relaxed text-cream/70">{t("subtitle")}</p>
+            <p className="max-w-2xl text-base leading-relaxed text-cream/70 sm:text-lg">
+              {t("subtitle")}
+            </p>
           </Reveal>
         </Container>
       </section>

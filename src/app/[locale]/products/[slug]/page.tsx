@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, ArrowUpRight, CheckCircle2 } from "lucide-react";
@@ -44,26 +45,38 @@ export default async function ProductDetailPage(props: PageProps<"/[locale]/prod
 
   return (
     <>
-      <section className="bg-grain relative overflow-hidden bg-ink py-16 sm:py-20">
-        <div className="absolute inset-0 bg-linear-to-br from-forest-dark via-ink to-ink" />
-        <EmberParticles className="pointer-events-none absolute inset-0" density={30} />
-        <Container className="relative flex flex-col gap-3">
+      <section className="relative overflow-hidden bg-ink py-16 sm:py-24">
+        <Image
+          src={product.image}
+          alt={t(`items.${product.slug}.name`)}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-25"
+        />
+        <div className="absolute inset-0 bg-linear-to-b from-ink/90 via-ink/80 to-ink" />
+        <div className="absolute inset-0 bg-linear-to-r from-forest-dark/50 via-transparent to-ink/70" />
+        <div className="bg-grain pointer-events-none absolute inset-0 opacity-20" />
+        <EmberParticles className="pointer-events-none absolute inset-0" density={12} />
+        <Container className="relative flex flex-col gap-4">
           <Link
             href="/products"
-            className="inline-flex w-fit items-center gap-1.5 text-sm font-medium text-cream/60 transition-colors hover:text-gold-light"
+            className="inline-flex w-fit items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-cream/70 backdrop-blur-xs transition-colors hover:border-gold/30 hover:text-gold-light"
           >
             <ArrowRight className="size-3.5 rotate-180 rtl:rotate-0" aria-hidden />
             {t("backToProducts")}
           </Link>
-          <Reveal className="flex items-center gap-4 pt-2">
-            <span className="flex size-14 items-center justify-center rounded-2xl bg-gold/15 text-gold-light">
+          <Reveal className="flex flex-wrap items-center gap-4 pt-2">
+            <span className="flex size-14 items-center justify-center rounded-2xl border border-gold/30 bg-gold/15 text-gold-light shadow-lg shadow-gold/5">
               <Icon className="size-7" strokeWidth={1.5} aria-hidden />
             </span>
             <div>
-              <h1 className="font-display text-3xl font-bold text-cream sm:text-4xl">
+              <h1 className="font-display text-3xl font-bold text-cream sm:text-4xl lg:text-5xl">
                 {t(`items.${product.slug}.name`)}
               </h1>
-              <p className="font-medium text-gold-light">{t(`items.${product.slug}.tagline`)}</p>
+              <p className="font-medium text-gold-light sm:text-lg">
+                {t(`items.${product.slug}.tagline`)}
+              </p>
             </div>
           </Reveal>
         </Container>
@@ -153,7 +166,7 @@ export default async function ProductDetailPage(props: PageProps<"/[locale]/prod
                 {t("otherProducts")}
               </h2>
             </Reveal>
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {otherProducts.map((p, i) => (
                 <Reveal key={p.slug} delay={(i % 2) * 100} className="flex h-full">
                   <TiltCard className="flex h-full">

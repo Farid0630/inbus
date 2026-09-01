@@ -40,7 +40,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior diatur per aksi (BackToTop) untuk mencegah delay navigasi App Router */
 }
 
 body {
