@@ -1,76 +1,102 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useCallback } from "react";
+import type { ProductDefinition } from "@/lib/products";
 import { products } from "@/lib/products";
 import { ProductCard } from "./ProductCard";
 
 /**
- * Mobile-only horizontal snap slider for product cards.
- * The center card scales up (pop-up effect) while side cards dim slightly.
- * On sm+ screens this component is hidden — the normal grid is shown instead.
+ * Mobile-only horizontal widget slider for product cards.
+ * Features:
+ * - Smooth horizontal snap scrolling
+ * - Pop-up widget elevation (scale up & shadow) on active card
+ * - Touch & swipe optimized with no scrollbar
+ * - Interactive pagination dots
  */
-export function ProductSlider() {
+export function ProductSlider({ items = products }: { items?: ProductDefinition[] }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Detect which card is most centred in the scroll track
+  // Scroll listener to update active index based on scroll position
+  const handleScroll = useCallback(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    const scrollLeft = track.scrollLeft;
+    const cardWidth = track.firstElementChild ? (track.firstElementChild as HTMLElement).offsetWidth + 16 : 280;
+    const index = Math.round(scrollLeft / cardWidth);
+    setActiveIndex(Math.min(Math.max(0, index), items.length - 1));
+  }, [items.length]);
+
   useEffect(() => {
     const track = trackRef.current;
     if (!track) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.6) {
-            const index = Number(
-              (entry.target as HTMLElement).dataset.index ?? 0,
-            );
-            setActiveIndex(index);
-          }
-        });
-      },
-      { root: track, threshold: 0.6 },
-    );
+    track.addEventListener("scroll", handleScroll, { passive: true });
+    return () => track.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
 
-    const cards = track.querySelectorAll("[data-index]");
-    cards.forEach((card) => observer.observe(card));
-    return () => observer.disconnect();
-  }, []);
+  const scrollToIndex = (index: number) => {
+    const track = trackRef.current;
+    if (!track) return;
+    const card = track.children[index] as HTMLElement;
+    if (card) {
+      const trackWidth = track.offsetWidth;
+      const cardWidth = card.offsetWidth;
+      const targetScroll = card.offsetLeft - (trackWidth - cardWidth) / 2;
+      track.scrollTo({ left: targetScroll, behavior: "smooth" });
+      setActiveIndex(index);
+    }
+  };
 
   return (
-    <div
-      ref={trackRef}
-      className="flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain px-4 pb-4 sm:hidden"
-      style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-    >
-      {products.map((product, i) => (
-        <div
-          key={product.slug}
-          data-index={i}
-          className="snap-center shrink-0 transition-all duration-300"
-          style={{
-            width: "78vw",
-            maxWidth: 320,
-            transform: activeIndex === i ? "scale(1.04)" : "scale(0.93)",
-            opacity: activeIndex === i ? 1 : 0.6,
-          }}
-        >
-          {/* Shadow "pop up" glow beneath active card */}
-          {activeIndex === i && (
+    <div className="flex flex-col gap-4 sm:hidden">
+      {/* Horizontal Scroll Track */}
+      <div
+        ref={trackRef}
+        className="flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain px-6 py-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+      >
+        {items.map((product, i) => {
+          const isActive = activeIndex === i;
+          return (
             <div
-              aria-hidden
-              className="pointer-events-none absolute inset-0 -z-10 rounded-2xl"
+              key={product.slug}
+              className={`snap-center shrink-0 transition-all duration-300 ${
+                isActive
+                  ? "scale-100 opacity-100 shadow-2xl shadow-ink/20 ring-2 ring-gold/40"
+                  : "scale-95 opacity-70"
+              }`}
               style={{
-                boxShadow: "0 20px 40px -8px rgba(0,0,0,0.35)",
+                width: "82vw",
+                maxWidth: 320,
                 borderRadius: "1rem",
               }}
+            >
+              <ProductCard product={product} />
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Pagination Indicators & Swipe Hint */}
+      <div className="flex flex-col items-center gap-2">
+        <div className="flex items-center gap-1.5">
+          {items.map((p, i) => (
+            <button
+              key={p.slug}
+              type="button"
+              aria-label={`Lihat produk ${i + 1}`}
+              onClick={() => scrollToIndex(i)}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                activeIndex === i ? "w-6 bg-gold" : "w-2 bg-ink/20 hover:bg-ink/40"
+              }`}
             />
-          )}
-          <ProductCard product={product} />
+          ))}
         </div>
-      ))}
-      {/* Trailing spacer so last card can snap centre on small viewports */}
-      <div className="shrink-0" style={{ width: "calc(50vw - 39vw)" }} />
+        <p className="text-[11px] font-medium tracking-wide text-muted">
+          Geser untuk melihat semua produk ({activeIndex + 1}/{items.length})
+        </p>
+      </div>
     </div>
   );
 }

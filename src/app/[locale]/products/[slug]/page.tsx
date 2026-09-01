@@ -6,6 +6,7 @@ import { ArrowRight, ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/Container";
 import { ProductCard } from "@/components/ProductCard";
+import { ProductSlider } from "@/components/ProductSlider";
 import { products, getProduct } from "@/lib/products";
 import { whatsappLink } from "@/lib/site-config";
 
@@ -155,11 +156,18 @@ export default async function ProductDetailPage(props: PageProps<"/[locale]/prod
 
       {otherProducts.length > 0 ? (
         <section className="bg-sand py-16 sm:py-20">
-          <Container className="flex flex-col gap-8">
+          <Container className="flex flex-col gap-6">
             <h2 className="font-display text-2xl font-semibold text-ink">
               {t("otherProducts")}
             </h2>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+            {/* Mobile: horizontal snap slider with pop-up effect */}
+            <div className="-mx-4 sm:hidden">
+              <ProductSlider items={otherProducts} />
+            </div>
+
+            {/* Tablet+: normal grid */}
+            <div className="hidden grid-cols-2 gap-6 sm:grid lg:grid-cols-3">
               {otherProducts.map((p) => (
                 <div key={p.slug} className="flex h-full">
                   <ProductCard product={p} />

@@ -13,6 +13,7 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ProductCard } from "@/components/ProductCard";
+import { ProductSlider } from "@/components/ProductSlider";
 import { FeatureCard } from "@/components/FeatureCard";
 import { ProcessStep } from "@/components/ProcessStep";
 import { StatItem } from "@/components/StatItem";
@@ -143,13 +144,20 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
 
       {/* 3. Products Catalog Section */}
       <section className="bg-sand py-20 sm:py-28">
-        <Container className="flex flex-col gap-12">
+        <Container className="flex flex-col gap-10">
           <SectionHeading
             eyebrow={tHome("productsEyebrow")}
             title={tHome("productsTitle")}
             subtitle={tHome("productsSubtitle")}
           />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          {/* Mobile: horizontal snap slider with pop-up effect */}
+          <div className="-mx-4 sm:hidden">
+            <ProductSlider />
+          </div>
+
+          {/* Tablet+: normal 2-3 column grid */}
+          <div className="hidden grid-cols-2 gap-6 sm:grid lg:grid-cols-3">
             {products.map((product) => (
               <div key={product.slug} className="flex h-full">
                 <ProductCard product={product} />
