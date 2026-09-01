@@ -12,7 +12,7 @@ export function Footer() {
   const tNav = useTranslations("nav");
   const tProducts = useTranslations("products");
   const tCert = useTranslations("certifications");
-  const year = new Date().getFullYear();
+  const year = 2023;
 
   return (
     <footer className="bg-ink text-cream/80">

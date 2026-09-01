@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ProductCard } from "@/components/ProductCard";
+import { ProductSlider } from "@/components/ProductSlider";
 import { products } from "@/lib/products";
 import { whatsappLink } from "@/lib/site-config";
 
@@ -58,13 +59,20 @@ export default async function ProductsPage(props: PageProps<"/[locale]/products"
 
       {/* Product Grid */}
       <section className="py-20 sm:py-24">
-        <Container className="flex flex-col gap-12">
+        <Container className="flex flex-col gap-10">
           <SectionHeading
             eyebrow={t("eyebrow")}
             title={t("title")}
             subtitle={t("subtitle")}
           />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          {/* Mobile: horizontal snap slider with pop-up effect */}
+          <div className="-mx-4 sm:hidden">
+            <ProductSlider />
+          </div>
+
+          {/* Tablet+: normal 2-3 column grid */}
+          <div className="hidden grid-cols-2 gap-6 sm:grid lg:grid-cols-3">
             {products.map((product) => (
               <div key={product.slug} className="flex h-full">
                 <ProductCard product={product} />
