@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useEffect, useState, useCallback } from "react";
-import type { ProductDefinition } from "@/lib/products";
+import { useRef, useEffect, useState, useCallback, useMemo } from "react";
+import type { ProductSlug } from "@/lib/products";
 import { products } from "@/lib/products";
 import { ProductCard } from "./ProductCard";
 
@@ -13,9 +13,14 @@ import { ProductCard } from "./ProductCard";
  * - Touch & swipe optimized with no scrollbar
  * - Interactive pagination dots
  */
-export function ProductSlider({ items = products }: { items?: ProductDefinition[] }) {
+export function ProductSlider({ slugs }: { slugs?: ProductSlug[] }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const items = useMemo(() => {
+    if (!slugs) return products;
+    return products.filter((p) => slugs.includes(p.slug));
+  }, [slugs]);
 
   // Scroll listener to update active index based on scroll position
   const handleScroll = useCallback(() => {

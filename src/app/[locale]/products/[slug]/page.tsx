@@ -163,7 +163,7 @@ export default async function ProductDetailPage(props: PageProps<"/[locale]/prod
 
             {/* Mobile: horizontal snap slider with pop-up effect */}
             <div className="-mx-4 sm:hidden">
-              <ProductSlider items={otherProducts} />
+              <ProductSlider slugs={otherProducts.map((p) => p.slug)} />
             </div>
 
             {/* Tablet+: normal grid */}
