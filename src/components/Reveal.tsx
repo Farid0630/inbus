@@ -21,11 +21,9 @@ export function Reveal({
 
     if (
       typeof IntersectionObserver === "undefined" ||
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      window.innerWidth < 768
     ) {
-      // Starts hidden to match the server-rendered markup, then reveals right
-      // after hydration when the animation can't or shouldn't run.
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setVisible(true);
       return;
     }
@@ -37,7 +35,7 @@ export function Reveal({
           observer.unobserve(el);
         }
       },
-      { threshold: 0.01, rootMargin: "100px 0px 50px 0px" },
+      { threshold: 0.01, rootMargin: "150px 0px 50px 0px" },
     );
 
     observer.observe(el);

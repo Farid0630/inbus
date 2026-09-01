@@ -92,7 +92,7 @@
     "title": "Menghubungkan Kelapa Sulawesi dengan Pasar Dunia",
     "intro": "Inbus Solusi Bisnis adalah produsen dan eksportir produk turunan kelapa yang berbasis di Makassar, Sulawesi Selatan — salah satu wilayah penghasil kelapa terbaik di Indonesia.",
     "storyTitle": "Perjalanan Kami",
-    "storyBody1": "Berawal dari kedekatan dengan komunitas petani kelapa lokal, kami membangun fasilitas produksi yang berfokus pada tiga produk utama: Charcoal Briquette, Coconut Shell Charcoal, dan Semi Husked Coconut.",
+    "storyBody1": "Berawal dari kedekatan dengan komunitas petani kelapa lokal, kami membangun fasilitas produksi yang berfokus pada komoditas unggulan: Briket Arang Kelapa, Arang Batok Kelapa, Kelapa Kupas Semi-Husked, Kopra Hitam, dan Kopra Putih.",
     "storyBody2": "Seiring waktu, jaringan distribusi kami berkembang ke berbagai negara, didorong oleh komitmen terhadap konsistensi kualitas dan ketepatan waktu pengiriman.",
     "missionTitle": "Misi Kami",
     "missionBody": "Menyediakan produk turunan kelapa berkualitas ekspor secara konsisten, sambil mendukung kesejahteraan petani dan komunitas kelapa di Sulawesi Selatan.",
@@ -140,7 +140,7 @@
   "products": {
     "eyebrow": "Produk Kami",
     "title": "Produk Ekspor Turunan Kelapa",
-    "subtitle": "Tiga produk utama yang kami produksi dengan standar mutu ekspor, siap disesuaikan dengan spesifikasi buyer.",
+    "subtitle": "Produk turunan kelapa unggulan yang kami produksi dengan standar mutu ekspor, siap disesuaikan dengan spesifikasi buyer internasional.",
     "viewDetails": "Lihat Detail Produk",
     "specsTitle": "Spesifikasi Teknis",
     "applicationsTitle": "Aplikasi & Penggunaan",
@@ -171,11 +171,11 @@
     },
     "items": {
       "charcoal-briquette": {
-        "name": "Charcoal Briquette",
+        "name": "Briket Arang Kelapa",
         "tagline": "Briket Arang Kelapa Premium",
         "shortDesc": "Briket arang kelapa padat dengan nilai kalori tinggi dan abu rendah, ideal untuk shisha, BBQ, dan kebutuhan bahan bakar industri.",
         "description": [
-          "Charcoal Briquette kami dibuat dari serbuk arang tempurung kelapa pilihan yang dipadatkan tanpa bahan kimia berbahaya, menghasilkan bahan bakar dengan nyala api stabil, panas tinggi, dan minim asap.",
+          "Briket Arang Kelapa kami dibuat dari serbuk arang tempurung kelapa pilihan yang dipadatkan tanpa bahan kimia berbahaya, menghasilkan bahan bakar dengan nyala api stabil, panas tinggi, dan minim asap.",
           "Tersedia dalam berbagai bentuk (cube, hexagonal, pillow, finger, flat) sesuai kebutuhan pasar, mulai dari kebutuhan rumah tangga, restoran BBQ, hingga lounge shisha di berbagai negara."
         ],
         "applications": [
@@ -187,11 +187,11 @@
         ]
       },
       "coconut-shell-charcoal": {
-        "name": "Coconut Shell Charcoal",
+        "name": "Arang Batok Kelapa",
         "tagline": "Arang Tempurung Kelapa Mentah",
         "shortDesc": "Arang tempurung kelapa mentah (raw charcoal) hasil karbonisasi tempurung pilihan, bahan baku utama untuk briket dan karbon aktif.",
         "description": [
-          "Coconut Shell Charcoal adalah hasil karbonisasi tempurung kelapa pilihan melalui proses pembakaran terkontrol, menghasilkan arang dengan fixed carbon tinggi dan kadar abu rendah.",
+          "Arang Batok Kelapa adalah hasil karbonisasi tempurung kelapa pilihan melalui proses pembakaran terkontrol, menghasilkan arang dengan fixed carbon tinggi dan kadar abu rendah.",
           "Produk ini banyak digunakan sebagai bahan baku pembuatan briket, karbon aktif (activated carbon), maupun sebagai bahan bakar industri langsung."
         ],
         "applications": [
@@ -203,11 +203,11 @@
         ]
       },
       "semi-husked-coconut": {
-        "name": "Semi Husked Coconut",
+        "name": "Kelapa Kupas Semi-Husked",
         "tagline": "Kelapa Setengah Kupas Kualitas Ekspor",
         "shortDesc": "Kelapa tua segar yang dikupas sebagian, memudahkan penanganan dan pembukaan di negara tujuan sambil menjaga kesegaran air dan daging kelapa.",
         "description": [
-          "Semi Husked Coconut adalah kelapa tua pilihan yang sabutnya dikupas sebagian, menyisakan bagian sabut di pangkal sebagai pegangan sekaligus pelindung selama pengiriman jarak jauh.",
+          "Kelapa Kupas Semi-Husked adalah kelapa tua pilihan yang sabutnya dikupas sebagian, menyisakan bagian sabut di pangkal sebagai pegangan sekaligus pelindung selama pengiriman jarak jauh.",
           "Proses pemanenan dan penanganan pascapanen kami rancang untuk menjaga kesegaran air dan daging kelapa hingga tiba di tangan buyer atau konsumen akhir."
         ],
         "applications": [

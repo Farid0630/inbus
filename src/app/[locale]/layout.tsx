@@ -128,7 +128,6 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
           <Header />
           <main className="flex-1">{props.children}</main>
           <Footer />
-          <WhatsAppButton message="Halo, saya tertarik dengan produk ekspor kelapa Inbus Solusi Bisnis." />
           <BackToTop />
         </NextIntlClientProvider>
       </body>

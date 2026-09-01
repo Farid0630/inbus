@@ -15,6 +15,10 @@ export function MountReveal({
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    if (window.innerWidth < 768 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setVisible(true);
+      return;
+    }
     const id = requestAnimationFrame(() => setVisible(true));
     return () => cancelAnimationFrame(id);
   }, []);
@@ -23,8 +27,8 @@ export function MountReveal({
     <div
       style={{ transitionDelay: `${delay}ms` }}
       className={clsx(
-        "transition-[opacity,transform] duration-700 ease-out",
-        visible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0",
+        "transition-[opacity,transform] duration-400 ease-out",
+        visible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
         className,
       )}
     >

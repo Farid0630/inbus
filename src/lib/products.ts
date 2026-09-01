@@ -48,7 +48,7 @@ export const products: ProductDefinition[] = [
   {
     slug: "charcoal-briquette",
     icon: Flame,
-    image: "/images/charcoal-briquette.jpeg",
+    image: "/images/briket-arang-kelapa-murni.jpg",
     specs: [
       { key: "shape", value: "Cube, Hexagonal, Pillow, Finger, Flat" },
       { key: "fixedCarbon", value: "≥ 75%" },
@@ -64,7 +64,7 @@ export const products: ProductDefinition[] = [
   {
     slug: "coconut-shell-charcoal",
     icon: Package,
-    image: "/images/coconut-shell-charcoal.jpg",
+    image: "/images/produk-arang-batok.jpg",
     specs: [
       { key: "grade", value: "Grade A / Grade B" },
       { key: "size", value: "2 – 5 cm (customizable)" },
@@ -79,7 +79,7 @@ export const products: ProductDefinition[] = [
   {
     slug: "semi-husked-coconut",
     icon: Nut,
-    image: "/images/semi-husked-coconut.jpeg",
+    image: "/images/produk-kelapa-semi-husked.jpg",
     specs: [
       { key: "netWeight", value: "300 – 500 g / piece" },
       { key: "huskRemaining", value: "approx. 30% husk retained at the base" },
@@ -93,7 +93,7 @@ export const products: ProductDefinition[] = [
   {
     slug: "kopra-hitam",
     icon: Layers,
-    image: "/images/kopra-hitam.jpg",
+    image: "/images/kopra-hitam-premium.jpg",
     specs: [
       { key: "grade", value: "Grade A / Grade B (Industri)" },
       { key: "moisture", value: "≤ 6% (oven-dried)" },
@@ -106,7 +106,7 @@ export const products: ProductDefinition[] = [
   {
     slug: "kopra-putih",
     icon: Sparkles,
-    image: "/images/kopra-putih.jpg",
+    image: "/images/produk-kopra-putih.jpg",
     specs: [
       { key: "grade", value: "Edible Premium / Grade A" },
       { key: "moisture", value: "≤ 5% (smoke-free drying)" },

@@ -68,21 +68,30 @@ export function EmberParticles({
     resize();
     particles = Array.from({ length: density }, spawn);
 
-    function tick() {
+    let lastTick = 0;
+    const fpsInterval = 1000 / 30; // 30 FPS cap untuk efisiensi daya maksimal
+
+    function tick(timestamp: number) {
       if (!ctx || !isRunning) return;
+      animId = requestAnimationFrame(tick);
+
+      const elapsed = timestamp - lastTick;
+      if (elapsed < fpsInterval) return;
+      lastTick = timestamp - (elapsed % fpsInterval);
+
       ctx.clearRect(0, 0, width, height);
 
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
-        p.y -= p.vy;
-        p.x += p.vx + Math.sin(p.life * 0.025) * 0.12;
-        p.life += 1;
+        p.y -= p.vy * 1.5;
+        p.x += p.vx + Math.sin(p.life * 0.03) * 0.15;
+        p.life += 1.5;
 
         const ratio = p.life / p.maxLife;
         const fade = ratio < 0.15 ? ratio / 0.15 : ratio > 0.75 ? (1 - ratio) / 0.25 : 1;
         p.alpha = Math.max(0, Math.min(1, fade));
 
-        ctx.fillStyle = `rgba(${p.color}, ${p.alpha * 0.75})`;
+        ctx.fillStyle = `rgba(${p.color}, ${p.alpha * 0.7})`;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();
@@ -91,14 +100,13 @@ export function EmberParticles({
           particles[i] = spawn();
         }
       }
-
-      animId = requestAnimationFrame(tick);
     }
 
     function start() {
       if (isRunning) return;
       isRunning = true;
       cancelAnimationFrame(animId);
+      lastTick = performance.now();
       animId = requestAnimationFrame(tick);
     }
 

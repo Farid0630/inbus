@@ -1,5 +1,26 @@
 @import "tailwindcss";
 
+@theme {
+  --color-ink: #1b1611;
+  --color-ink-soft: #322921;
+  --color-forest: #1f5c43;
+  --color-forest-light: #2f7a57;
+  --color-forest-dark: #163f2e;
+  --color-gold: #c9974a;
+  --color-gold-light: #e0b672;
+  --color-rust: #b5502f;
+  --color-rust-light: #cb6a44;
+  --color-graphite: #4a4640;
+  --color-graphite-light: #6b655c;
+  --color-sand: #f8f3e9;
+  --color-cream: #fffcf7;
+  --color-line: #e7dfcf;
+  --color-muted: #6b6055;
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-technical);
+}
+
 :root {
   --color-ink: #1b1611;
   --color-ink-soft: #322921;
@@ -18,27 +39,6 @@
   --color-muted: #6b6055;
 }
 
-@theme inline {
-  --color-ink: var(--color-ink);
-  --color-ink-soft: var(--color-ink-soft);
-  --color-forest: var(--color-forest);
-  --color-forest-light: var(--color-forest-light);
-  --color-forest-dark: var(--color-forest-dark);
-  --color-gold: var(--color-gold);
-  --color-gold-light: var(--color-gold-light);
-  --color-rust: var(--color-rust);
-  --color-rust-light: var(--color-rust-light);
-  --color-graphite: var(--color-graphite);
-  --color-graphite-light: var(--color-graphite-light);
-  --color-sand: var(--color-sand);
-  --color-cream: var(--color-cream);
-  --color-line: var(--color-line);
-  --color-muted: var(--color-muted);
-  --font-sans: var(--font-body);
-  --font-display: var(--font-display);
-  --font-mono: var(--font-technical);
-}
-
 html {
   /* scroll-behavior diatur per aksi (BackToTop) untuk mencegah delay navigasi App Router */
 }
@@ -46,32 +46,11 @@ html {
 body {
   background: var(--color-cream);
   color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
   background: var(--color-gold-light);
   color: var(--color-ink);
-}
-
-.bg-grain {
-  background-image: radial-gradient(
-    circle at 1px 1px,
-    rgba(27, 22, 17, 0.06) 1px,
-    transparent 0
-  );
-  background-size: 22px 22px;
-}
-
-.bg-ember {
-  background-image: url("/images/pattern-ember.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.bg-blueprint {
-  background-image:
-    linear-gradient(rgba(74, 70, 64, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(74, 70, 64, 0.06) 1px, transparent 1px);
-  background-size: 32px 32px;
 }

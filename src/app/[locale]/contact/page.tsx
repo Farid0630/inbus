@@ -4,8 +4,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { MapPin, Phone, Mail, Clock, Anchor, ArrowUpRight, MessageCircle } from "lucide-react";
 import { Container } from "@/components/Container";
 import { ContactForm } from "@/components/ContactForm";
-import { Reveal } from "@/components/Reveal";
-import { EmberParticles } from "@/components/EmberParticles";
 import { siteConfig, whatsappLink } from "@/lib/site-config";
 
 export async function generateMetadata(props: {
@@ -36,7 +34,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
       icon: MessageCircle,
       label: t("whatsappLabel"),
       value: siteConfig.contact.whatsappDisplay,
-      href: whatsappLink("Hello, I'd like to request a quote."),
+      href: whatsappLink("Halo, saya ingin meminta penawaran produk ekspor kelapa."),
     },
     {
       icon: Mail,
@@ -64,7 +62,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
 
   return (
     <>
-      <section className="relative overflow-hidden bg-ink py-20 sm:py-28">
+      <section className="relative overflow-hidden bg-ink bg-[#1b1611] text-[#fffcf7] py-20 sm:py-28">
         <Image
           src="/images/pabrikBriket.jpg"
           alt="Inbus Factory & Contact"
@@ -75,10 +73,8 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
         />
         <div className="absolute inset-0 bg-linear-to-b from-ink/90 via-ink/80 to-ink" />
         <div className="absolute inset-0 bg-linear-to-r from-forest-dark/60 via-transparent to-ink/70" />
-        <div className="bg-grain pointer-events-none absolute inset-0 opacity-20" />
-        <EmberParticles className="pointer-events-none absolute inset-0" density={14} />
         <Container className="relative flex flex-col items-center gap-5 text-center">
-          <Reveal className="flex flex-col items-center gap-5">
+          <div className="flex flex-col items-center gap-5">
             <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-gold-light uppercase">
               {t("eyebrow")}
             </span>
@@ -88,20 +84,20 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
             <p className="max-w-2xl text-base leading-relaxed text-cream/70 sm:text-lg">
               {t("subtitle")}
             </p>
-          </Reveal>
+          </div>
         </Container>
       </section>
 
       <section className="py-20 sm:py-24">
         <Container className="grid gap-10 lg:grid-cols-5 lg:gap-12">
-          <Reveal className="rounded-3xl border border-line bg-cream p-6 sm:p-8 lg:col-span-3">
+          <div className="rounded-3xl border border-line bg-cream p-6 sm:p-8 lg:col-span-3">
             <h2 className="mb-6 font-display text-xl font-semibold text-ink">
               {t("formTitle")}
             </h2>
             <ContactForm />
-          </Reveal>
+          </div>
 
-          <Reveal delay={150} className="flex flex-col gap-6 lg:col-span-2">
+          <div className="flex flex-col gap-6 lg:col-span-2">
             <div className="rounded-3xl border border-line bg-sand p-6 sm:p-8">
               <h2 className="mb-5 font-display text-xl font-semibold text-ink">
                 {t("infoTitle")}
@@ -142,7 +138,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
               </ul>
             </div>
 
-            <div className="bg-grain relative overflow-hidden rounded-3xl bg-forest-dark p-6 sm:p-8">
+            <div className="relative overflow-hidden rounded-3xl bg-forest-dark p-6 sm:p-8">
               <div className="absolute inset-0 bg-linear-to-br from-forest via-forest-dark to-ink" />
               <div className="relative flex flex-col gap-3">
                 <h3 className="font-display text-lg font-semibold text-cream">
@@ -152,7 +148,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
                   {t("whatsappCtaSubtitle")}
                 </p>
                 <a
-                  href={whatsappLink("Hello, I'd like to request a quote.")}
+                  href={whatsappLink("Halo, saya ingin berkonsultasi mengenai ekspor produk kelapa.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-1 inline-flex w-fit items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-gold-light"
@@ -162,7 +158,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
                 </a>
               </div>
             </div>
-          </Reveal>
+          </div>
         </Container>
       </section>
     </>
