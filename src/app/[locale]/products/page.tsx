@@ -8,7 +8,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { ProductCard } from "@/components/ProductCard";
 import { ProductSlider } from "@/components/ProductSlider";
 import { products } from "@/lib/products";
-import { whatsappLink } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 export async function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -97,15 +97,7 @@ export default async function ProductsPage(props: PageProps<"/[locale]/products"
               {tHome("ctaButtonPrimary")}
               <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
             </Link>
-            <a
-              href={whatsappLink("Halo, saya tertarik dengan katalog produk ekspor Inbus Solusi Bisnis.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-white/10"
-            >
-              {tHome("ctaButtonSecondary")}
-              <ArrowUpRight className="size-4" aria-hidden />
-            </a>
+
           </div>
         </Container>
       </section>

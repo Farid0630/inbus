@@ -8,7 +8,7 @@ import { Container } from "@/components/Container";
 import { ProductCard } from "@/components/ProductCard";
 import { ProductSlider } from "@/components/ProductSlider";
 import { products, getProduct } from "@/lib/products";
-import { whatsappLink } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 export function generateStaticParams() {
   return products.map((product) => ({ slug: product.slug }));
@@ -138,17 +138,7 @@ export default async function ProductDetailPage(props: PageProps<"/[locale]/prod
                 {t("requestQuote")}
                 <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
               </Link>
-              <a
-                href={whatsappLink(
-                  `Halo, saya tertarik dengan produk ${product.slug.replace(/-/g, " ")}. Mohon kirimkan informasi penawaran dan spesifikasi detail.`,
-                )}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-forest/30 px-5 py-3 text-sm font-semibold text-forest transition-colors hover:bg-forest/10"
-              >
-                WhatsApp
-                <ArrowUpRight className="size-4" aria-hidden />
-              </a>
+
             </div>
           </div>
         </Container>

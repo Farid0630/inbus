@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { MapPin, Phone, Mail, BadgeCheck } from "lucide-react";
+import { MapPin, Mail, BadgeCheck } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "./Container";
 import { siteConfig } from "@/lib/site-config";
@@ -117,13 +117,7 @@ export function Footer() {
               {siteConfig.address.province}, {siteConfig.address.country}
             </span>
           </a>
-          <a
-            href={`tel:${siteConfig.contact.phone}`}
-            className="flex items-center gap-2.5 text-sm text-cream/60 transition-colors hover:text-gold"
-          >
-            <Phone className="size-4 shrink-0" aria-hidden />
-            {siteConfig.contact.phone}
-          </a>
+
           <a
             href={`mailto:${siteConfig.contact.email}`}
             className="flex items-center gap-2.5 text-sm text-cream/60 transition-colors hover:text-gold"

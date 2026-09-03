@@ -7,7 +7,6 @@ import { routing, rtlLocales, type Locale } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site-config";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { BackToTop } from "@/components/BackToTop";
 import "../globals.css";
 
@@ -101,7 +100,6 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
     alternateName: siteConfig.brandName,
     url: `https://${siteConfig.domain}`,
     email: siteConfig.contact.email,
-    telephone: siteConfig.contact.phone,
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address.line1,

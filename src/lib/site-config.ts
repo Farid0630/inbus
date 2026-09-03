@@ -20,9 +20,6 @@ export const siteConfig = {
     mapsUrl: "https://maps.google.com/?q=Makassar,Indonesia", // TODO: link Google Maps asli
   },
   contact: {
-    whatsapp: "6281234567890", // TODO: nomor WA aktif, format 62xxxxxxxxxx (tanpa "+")
-    whatsappDisplay: "+62 812-3456-7890", // TODO
-    phone: "+62 411 000000", // TODO
     email: "export@makassarcocoexport.com", // TODO
     workingHours: "Senin – Sabtu, 08.00 – 17.00 WITA", // TODO
   },
@@ -57,5 +54,3 @@ export const siteConfig = {
   ],
 } as const;
 
-export const whatsappLink = (message: string) =>
-  `https://wa.me/${siteConfig.contact.whatsapp}?text=${encodeURIComponent(message)}`;

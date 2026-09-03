@@ -12,7 +12,6 @@ export function ContactForm() {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    phone: "",
     country: "",
     product: "",
     message: "",
@@ -30,7 +29,6 @@ export function ContactForm() {
     const body = [
       `Name: ${form.name}`,
       `Email: ${form.email}`,
-      `Phone/WhatsApp: ${form.phone}`,
       `Country: ${form.country}`,
       `Product of interest: ${form.product}`,
       "",
@@ -72,17 +70,7 @@ export function ContactForm() {
             className={inputClass}
           />
         </div>
-        <div className="flex flex-col gap-1.5">
-          <label className="text-sm font-medium text-ink-soft" htmlFor="phone">
-            {t("formPhone")}
-          </label>
-          <input
-            id="phone"
-            value={form.phone}
-            onChange={update("phone")}
-            className={inputClass}
-          />
-        </div>
+
         <div className="flex flex-col gap-1.5">
           <label className="text-sm font-medium text-ink-soft" htmlFor="country">
             {t("formCountry")}

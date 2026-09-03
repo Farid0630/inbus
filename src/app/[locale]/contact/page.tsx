@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { MapPin, Phone, Mail, Clock, Anchor, ArrowUpRight, MessageCircle } from "lucide-react";
 import { Container } from "@/components/Container";
 import { ContactForm } from "@/components/ContactForm";
-import { siteConfig, whatsappLink } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 export async function generateMetadata(props: {
   params: Promise<{ locale: string }>;
@@ -31,22 +31,10 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
       href: siteConfig.address.mapsUrl,
     },
     {
-      icon: MessageCircle,
-      label: t("whatsappLabel"),
-      value: siteConfig.contact.whatsappDisplay,
-      href: whatsappLink("Halo, saya ingin meminta penawaran produk ekspor kelapa."),
-    },
-    {
       icon: Mail,
       label: t("emailLabel"),
       value: siteConfig.contact.email,
       href: `mailto:${siteConfig.contact.email}`,
-    },
-    {
-      icon: Phone,
-      label: t("phoneLabel"),
-      value: siteConfig.contact.phone,
-      href: `tel:${siteConfig.contact.phone}`,
     },
     {
       icon: Clock,
@@ -148,9 +136,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
                   {t("whatsappCtaSubtitle")}
                 </p>
                 <a
-                  href={whatsappLink("Halo, saya ingin berkonsultasi mengenai ekspor produk kelapa.")}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={`mailto:${siteConfig.contact.email}?subject=Konsultasi Ekspor Produk Kelapa`}
                   className="mt-1 inline-flex w-fit items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-gold-light"
                 >
                   {t("whatsappCtaButton")}

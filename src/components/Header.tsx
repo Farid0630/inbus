@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Container } from "./Container";
-import { siteConfig, whatsappLink } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 import clsx from "clsx";
 
 export function Header() {
@@ -79,9 +79,7 @@ export function Header() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href={whatsappLink("Halo, saya tertarik dengan produk ekspor kelapa Anda.")}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`mailto:${siteConfig.contact.email}?subject=Tertarik dengan produk ekspor kelapa Anda`}
             className="inline-flex items-center gap-1.5 rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-forest-dark"
           >
             {t("getQuote")}
@@ -119,9 +117,7 @@ export function Header() {
           ))}
           <div className="mt-2 flex items-center justify-end gap-3 border-t border-line pt-4">
             <a
-              href={whatsappLink("Halo, saya tertarik dengan produk ekspor kelapa Anda.")}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`mailto:${siteConfig.contact.email}?subject=Tertarik dengan produk ekspor kelapa Anda`}
               className="inline-flex w-full items-center justify-center gap-1.5 rounded-full bg-forest px-4 py-3 text-sm font-semibold text-cream sm:w-auto"
             >
               {t("getQuote")}

@@ -3,9 +3,9 @@ import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { CornerBrackets } from "./CornerBrackets";
-import type { ProductDefinition } from "@/lib/products";
+import type { Product } from "@/lib/products";
 
-export function ProductCard({ product }: { product: ProductDefinition }) {
+export function ProductCard({ product }: { product: Product }) {
   const t = useTranslations("products");
   const Icon = product.icon;
   const name = t(`items.${product.slug}.name`);

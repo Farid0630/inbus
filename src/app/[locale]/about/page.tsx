@@ -21,10 +21,9 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { FeatureCard } from "@/components/FeatureCard";
-import { CertificationBadge } from "@/components/CertificationBadge";
 import { StatItem } from "@/components/StatItem";
 import { CornerBrackets } from "@/components/CornerBrackets";
-import { siteConfig, whatsappLink } from "@/lib/site-config";
+import { siteConfig } from "@/lib/site-config";
 
 const valueIcons = [ShieldCheck, Leaf, Eye, Handshake];
 
@@ -69,7 +68,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/about">) {
         />
         <div className="absolute inset-0 bg-linear-to-b from-ink/90 via-ink/75 to-ink" />
         <div className="absolute inset-0 bg-linear-to-r from-forest-dark/70 via-transparent to-ink/70" />
-        
+
         <Container className="relative flex flex-col items-center gap-6 text-center">
           <div className="flex flex-col items-center gap-5">
             <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-gold-light uppercase">
@@ -200,7 +199,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/about">) {
               <ul className="mt-6 flex flex-col gap-2.5 border-t border-line pt-5 text-sm text-ink-soft">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="size-4 text-gold shrink-0" />
-                  <span>Eksportir terpercaya Indonesia Timur</span>
+                  <span>Supplier terpercaya Indonesia Timur</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="size-4 text-gold shrink-0" />
@@ -281,23 +280,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/about">) {
         </Container>
       </section>
 
-      {/* 6. Certifications */}
-      <section className="py-20 sm:py-24">
-        <Container className="flex flex-col gap-12">
-          <SectionHeading
-            eyebrow={t("certSectionEyebrow")}
-            title={t("certSectionTitle")}
-            subtitle={t("certSectionSubtitle")}
-          />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {siteConfig.certifications.map((cert) => (
-              <div key={cert.id} className="flex h-full">
-                <CertificationBadge cert={cert} />
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
+
 
       {/* 7. Stats in Numbers */}
       <section className="relative overflow-hidden bg-forest-dark py-16 sm:py-20 text-center">
@@ -344,17 +327,7 @@ export default async function AboutPage(props: PageProps<"/[locale]/about">) {
                   {t("ctaPrimary")}
                   <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
                 </Link>
-                <a
-                  href={whatsappLink(
-                    "Halo, saya ingin mengetahui lebih lanjut mengenai perusahaan Anda dan peluang kemitraan ekspor.",
-                  )}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-white/10 sm:w-auto"
-                >
-                  {t("ctaSecondary")}
-                  <ArrowUpRight className="size-4" aria-hidden />
-                </a>
+
               </div>
             </div>
           </div>
