@@ -12,7 +12,7 @@ export const siteConfig = {
   domain: "www.makassarcocoexport.com", // TODO: ganti dengan domain asli
   foundedYear: 2015, // TODO
   address: {
-    line1: "Jl. Pelabuhan Hasanuddin No. 00", // TODO
+    line1: "JL. MANGGARUPI", // TODO
     city: "Makassar",
     province: "Sulawesi Selatan",
     postalCode: "90111", // TODO
@@ -20,7 +20,8 @@ export const siteConfig = {
     mapsUrl: "https://maps.google.com/?q=Makassar,Indonesia", // TODO: link Google Maps asli
   },
   contact: {
-    email: "export@makassarcocoexport.com", // TODO
+    email: "info@inbussolusibisnis.com",
+    email2: "inbussolusibisnis@gmail.com",
     workingHours: "Senin – Sabtu, 08.00 – 17.00 WITA", // TODO
   },
   social: {

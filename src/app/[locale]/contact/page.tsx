@@ -37,6 +37,12 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
       href: `mailto:${siteConfig.contact.email}`,
     },
     {
+      icon: Mail,
+      label: t("emailLabel"),
+      value: siteConfig.contact.email2,
+      href: `mailto:${siteConfig.contact.email2}`,
+    },
+    {
       icon: Clock,
       label: t("hoursLabel"),
       value: siteConfig.contact.workingHours,
@@ -126,24 +132,7 @@ export default async function ContactPage(props: PageProps<"/[locale]/contact">)
               </ul>
             </div>
 
-            <div className="relative overflow-hidden rounded-3xl bg-forest-dark p-6 sm:p-8">
-              <div className="absolute inset-0 bg-linear-to-br from-forest via-forest-dark to-ink" />
-              <div className="relative flex flex-col gap-3">
-                <h3 className="font-display text-lg font-semibold text-cream">
-                  {t("whatsappCtaTitle")}
-                </h3>
-                <p className="text-sm leading-relaxed text-cream/70">
-                  {t("whatsappCtaSubtitle")}
-                </p>
-                <a
-                  href={`mailto:${siteConfig.contact.email}?subject=Konsultasi Ekspor Produk Kelapa`}
-                  className="mt-1 inline-flex w-fit items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-gold-light"
-                >
-                  {t("whatsappCtaButton")}
-                  <ArrowUpRight className="size-4" aria-hidden />
-                </a>
-              </div>
-            </div>
+
           </div>
         </Container>
       </section>

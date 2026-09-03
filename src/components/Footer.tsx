@@ -125,6 +125,13 @@ export function Footer() {
             <Mail className="size-4 shrink-0" aria-hidden />
             {siteConfig.contact.email}
           </a>
+          <a
+            href={`mailto:${siteConfig.contact.email2}`}
+            className="flex items-center gap-2.5 text-sm text-cream/60 transition-colors hover:text-gold"
+          >
+            <Mail className="size-4 shrink-0" aria-hidden />
+            {siteConfig.contact.email2}
+          </a>
         </div>
       </Container>
 
